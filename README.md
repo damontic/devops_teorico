@@ -10,14 +10,14 @@ Presentación que describe las ideas de DevOps aplicadas en S4N.
 ## Contenido
 
 - Introducción
-    -- Desarrollo Ágil 
-    -- Antipatrones de Manejo de Software (CD)
-    -- Integración Contínua - Despliegue Continuo - Entrega Contínua (CD)
-    -- Flujo de Valor (DH value stream)
-    -- SRE (Google SRE)
+    Natalia-- Desarrollo Ágil 
+    Natalia-- Antipatrones de Manejo de Software (CD)
+    David-- Integración Contínua - Despliegue Continuo - Entrega Contínua (CD)
+    David-- Flujo de Valor (DH value stream)
+    Leonardo-- SRE (Google SRE)
 
 -Principios de Devops
-    -- CAMS (DH)
+    Leonardo-- CAMS (DH)
     -- Pipeline de Software (CD)
     -- Retroalimentación (CD)
     -- Aprendizaje Contínuo y Experimentación (CD, DH)
@@ -106,4 +106,6 @@ Presentación que describe las ideas de DevOps aplicadas en S4N.
 
 
     - Seguridad Informática (?)
+        Si nos queda tiempo
+
 
