@@ -1,10 +1,9 @@
 .pie {
-  width: 100px; height: 100px;
+  width: 300px; height: 300px;
   border-radius: 50%;
   background: yellowgreen;
   background-image:linear-gradient(to right, transparent 50%, #655 0);
-  text-align: center;
-  display: float;
+  margin: 0 auto;
 }
 
 .reveal .white-font {
