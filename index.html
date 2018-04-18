@@ -73,29 +73,38 @@
 
 					<section>
 						<p>Desarrollo Ágil</p>
-						<p>Antipatrones de Manejo de Software (CD)</p>
-						<p>Integración Contínua - Despliegue Continuo - Entrega Contínua (CD)</p>
-						<p>Flujo de Valor (DH value stream)</p>
-						<p>SRE (Google SRE)</p>
+						<p>Antipatrones de Manejo de Software</p>
+						<p>Integración Contínua - Despliegue Continuo - Entrega Contínua</p>
+						<p>Flujo de Valor</p>
+						<p>Site Reliability Engineering(SRE)</p>
+						<aside class="notes">
+							<p>Desarrollo Ágil</p>
+							<p>Antipatrones de Manejo de Software (CD)</p>
+							<p>Integración Contínua - Despliegue Continuo - Entrega Contínua (CD)</p>
+							<p>Flujo de Valor (DH value stream)</p>
+							<p>SRE (Google SRE)</p>
+						</aside>
 					</section>
 
 					<section>
-						<h3 style="float: left">Desarrollo Ágil</h3>
+						<h3 >Desarrollo Ágil</h3>
 					</section>
 					<section>
-						<h3 style="float: left">Antipatrones de Manejo de Software (CD)</h3>
+						<h3 >Antipatrones de Manejo de Software (CD)</h3>
 					</section>
 					<section>
-						<h3 style="float: left">CI/CD/CD</h3>
+						<h3> CI/CD/CD</h3>
 						<img src="images/ci_cd_cd.png" width="80%" />
 					</section>
 					<section>
-						<h3 style="float: left">Flujo de Valor</h3>
+						<h3 >Flujo de Valor</h3>
 						<img src="images/value-stream.png" />
 					</section>
 					<section>
-						<h3 style="float: left">SRE - Site Reliability Engineering</h3>
-						<p class="fragment">"SRE is what you get when you treat operations as if it’s a software problem"Google SRE</p>
+						<h3 >SRE - Site Reliability Engineering</h3>						
+						<blockquote cite="https://landing.google.com/sre/book/chapters/introduction.html">
+							&ldquo;SRE is what you get when you treat operations as if it’s a software problem&rdquo;Google SRE
+						</blockquote>
 						<aside class="notes">
 							20 Minutos
 						</aside>
@@ -105,11 +114,11 @@
 						
 						<p>Sysops</p>
 						<p>Desarrollo vs Operaciones</p>
-						<blockquote  style="background: #b71930">
+						<blockquote  style="background: #b71930" class="white-font">
 						&ldquo;Queremos desplegar lo que sea, cuando sea, sin impedimentos&rdquo;
 						</blockquote>
 						VS
-						<blockquote style="background: #b71930">
+						<blockquote style="background: #b71930" class="white-font">
 						&ldquo;No queremos cambiar nada una vez este funcionando el sistema&rdquo;
 						</blockquote>
 
@@ -145,19 +154,16 @@
 					<section>
 						<h4>Principios SRE</h4>
 						<ul>
-							<li class="fragment current-visible">Enfoque constante en Ingenieria
-								<p>Blame-free postmortem culture</p>
-								<p>Ops 50% Eng 50%</p>
-							</li>
-							<li class="fragment current-visible">Busqueda de velocidad de cambio sin violar el SLO</li>
-							<li class="fragment current-visible">Monitoreo</li>
-							<li class="fragment current-visible">Respuesta a Emergencias</li>
+							<li class="fragment current-visible">Enfoque constante en Ingenieria (Blame-free)</li>
+							<li class="fragment current-visible">Busqueda de velocidad de cambio sin violar el SLO (Error Budget)</li>
+							<li class="fragment current-visible">Monitoreo (Alarmas accionables)</li>
+							<li class="fragment current-visible">Respuesta a Emergencias (Latencia Humana)</li>
 							<li class="fragment current-visible">Manejo de Cambios</li>
 							<li class="fragment current-visible">Prevision de demanda y capacidad</li>
 							<li class="fragment current-visible">Aprovisionamiento</li>
 							<li class="fragment current-visible">Efficiencia y Performance</li>
 						</ul>
-						<aside>
+						<aside class="notes">
 						Tenets of SRE:
 						Ensuring a Durable Focus on Engineering
 							Blame-free postmortem culture

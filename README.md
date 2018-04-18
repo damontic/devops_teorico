@@ -18,15 +18,15 @@ Presentación que describe las ideas de DevOps aplicadas en S4N.
 
 -Principios de Devops
     Leonardo-- CAMS (DH)
-    -- Pipeline de Software (CD)
-    -- Retroalimentación (CD)
-    -- Aprendizaje Contínuo y Experimentación (CD, DH)
-    -- Arquitectura de Sistemas (Release It)
-        --- Reactive Manifesto
-        --- 12 Factor App
+    David-- Pipeline de Software (CD)
+    David-- Retroalimentación (CD)
+    David-- Aprendizaje Contínuo y Experimentación (CD, DH)
+    Leonardo-- Arquitectura de Sistemas (Release It)
+                --- Reactive Manifesto
+                --- 12 Factor App
 
 - Dimensiones del Software y su administracion
-    - Dimensiones del Software (CD)
+    Natalia- Dimensiones del Software (CD)
         -- Source Code
         -- Infrastructure as Code
         -- Configuration as Code
