@@ -9,3 +9,11 @@
 .reveal .white-font {
   color: #fff; 
 }
+
+.reveal .red-font {
+  color: #f00; 
+}
+
+.reveal .blue-font {
+  color: #00f; 
+}
