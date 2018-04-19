@@ -17,6 +17,7 @@ Presentación que describe las ideas de DevOps aplicadas en S4N.
     Leonardo-- SRE (Google SRE)
 
 -Principios de Devops
+    --What is DevOps?
     Leonardo-- CAMS (DH)
     David-- Pipeline de Software (CD)
     David-- Retroalimentación (CD)
