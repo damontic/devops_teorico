@@ -110,3 +110,10 @@ Presentación que describe las ideas de DevOps aplicadas en S4N.
         Si nos queda tiempo
 
 
+Notas reu Juan
+
+- Enfocarnos en ejercicios prascticos en la tarde
+- No obviar cosas basicas
+- podemos tratar de mirar si los talleres o casos de ejemplo pueden ser incrementales e iterativos como la mona lisa? jaja
+- pensar en que es material que eventualmente va a ser usado por seven
+- sin tele y sin cerveza nati pierde la cabeza
