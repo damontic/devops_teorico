@@ -47,11 +47,10 @@
 					</section>
 
 					<section>
-						<h2>Contenido</h2>
-						<p class="fragment">Conceptos</p>
+						<h2>Contenido</h2>						
 						<p class="fragment">Principios de Devops</p>
-						<p class="fragment">Dimensiones del Software y su Administración</p>
-						<p class="fragment">Manejo del proceso de despliegue</p>
+						<p class="fragment">Conceptos</p>
+						<p class="fragment">Dimensiones del Software</p>						
 						<p class="fragment">Mejora Continua y Operación</p>
 						<aside class="notes">
 							<p>Conceptos (2h)</p>
@@ -66,36 +65,6 @@
 
 				<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
-					<section>
-						<img style="float: left" class="no-border"  width="10%" src="images/rombo.svg" />
-						<h1>Conceptos</h1>
-					</section>
-
-					<section>
-						<h3>Desarrollo Ágil</h3>
-					</section>
-
-					<section>
-						<h3 >Antipatrones de Manejo de Software (CD)</h3>
-					</section>
-
-					<section>
-						<h3> CI/CD/CD</h3>
-						<img src="images/ci_cd_cd.png" width="80%" />
-					</section>
-
-					<section>
-						<h3 >Flujo de Valor</h3>
-						<img src="images/value-stream.png" />
-					</section>
-
-		
-
-					
-				</section>
-
-				<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">					
-					
 					<section>
 						<img style="float: left" class="no-border"  width="10%" src="images/rombo.svg" />
 						<h1>Devops</h1>
@@ -134,6 +103,12 @@
 						</aside>
 					</section>
 
+					<section>
+						<h3 >Flujo de Valor</h3>
+						<img src="images/value-stream.png" />
+					</section>
+					
+
 					<section >					
 						
 						<h2> Valores DevOps</h2>
@@ -155,7 +130,31 @@
 						 	Sharing ideas and problems is the heart of collaboration. And it's also really at the heart of DevOps. In DevOps, expect to see a high premium placed on openness and transparency.
 						</aside>
 					</section>
-					
+					<section>
+						<h1>
+							Ejercicio
+						</h1>
+					</section>
+
+					<section>
+						<img style="float: left" class="no-border"  width="10%" src="images/rombo.svg" />
+						<h1>Conceptos</h1>
+					</section>
+
+					<section>
+						<h3>Desarrollo Ágil</h3>
+					</section>
+
+					<section>
+						<h3 >Antipatrones de Manejo de Software (CD)</h3>
+					</section>
+
+					<section>
+						<h3> CI/CD/CD</h3>
+						<img src="images/ci_cd_cd.png" width="80%" />
+					</section>
+
+
 					<section>
 						<h2>Pipeline de Software (CD)</h2>
 					</section>
@@ -165,8 +164,56 @@
 					</section>
 
 					<section>
-						<h2>Aprendizaje Contínuo y Experimentación (CD, DH)</h2>
+						<h2>Aprendizaje Contínuo y Experimentación</h2>
 						Kaizen
+						<img src="images/devops_kaizen.png" class="no-border" width="10%" />
+						
+						
+					</section>
+										<section>
+						<h2>Aprendizaje Contínuo y Experimentación</h2>
+						Kaizen						
+						<img src="images/devops_muda_mura_muri.png" class="no-border" width="50%" />
+
+						
+						<aside class="notes">							
+							Muri: Excess
+							Mura: Uneveness Disparidad
+							Muda: Waste
+							Image from: https://hackernoon.com/the-muri-of-a-bad-on-call-system-6d059f715f32
+							Cultura de aprendizaje continuo y experimentación
+							- Leadership
+								Mistakes are punished (Blameless postmortems) Ejemplo gitlab y amazon
+								Suggestions or problems are viewed as whistle blowers and troublemakers
+							- Experiments encouraged
+								Enabled by standarization of procedures and documentation of results
+							- We are all lifelong learners who must take risks in our daily work.
+							Apply scientific approach to process improvement and product development
+							Learn from successes and failures!
+							Local learnings are turned intro global improvements!
+							"Even more important than daily work is the improvement of daily work"
+							In the absence of improvements processes degrade over time.
+							Shedule time to improve: Kaizen blitzes
+							From: Devops Handbook
+						</aside>
+					</section>
+					<section>
+						<h2>Aprendizaje Contínuo y Experimentación</h2>
+						Blameless postmortems:
+						<a href="https://aws.amazon.com/message/41926/">
+							<img src="images/devops_aws_s3.png" class="no-border" width="10%" />
+						</a>
+						<a href="https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/">
+							<img src="images/devops_gitlab.png"  class="no-border" width="10%" />
+						</a>
+						
+						<aside class="notes">
+							Cuando git lab se cayo por un dia completo y perdieron 6 horas de datos,
+							la culpa no fue de quien corrio el comando para borrar el cache.
+							Fue del proceso que le permitio correr el comando estando cansado sin estar consiente que estaba en produccion.
+							Agregaron indicadores claros para tener presente que se esta en un servidor de produccion
+
+							Cuando s3 se cayo por que se corrio un comando de reinicio que aplico a mas máquinas del cluster de las esperadas, se corrigio el comando para que no permita reiniciar más maquinas de las que desestabilizan el cluster.
 					</section>
 
 					<section>
@@ -214,6 +261,79 @@
 					<section>
 						<h2>Ganado vs Mascotas | Servidores fenix vs Copo de nieve</h2>
 					</section>
+					
+					<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+					<h1>Ejercicio</h1>
+					</section>
+
+
+
+				</section>
+
+				<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+					
+					<section>
+						<img style="float: left" class="no-border"  width="6%" src="images/rombo.svg" />
+						<h1>Dimensiones del Software</h1>
+					</section>
+				
+					<section>						
+						<p>Dimensiones</p>
+						<p>Administración de Infraestructura</p>
+						<p>Administración de Configuracion</p>
+						<p>Administración de Codigo </p>
+						<p>Administración de Datos</p>
+					</section>
+
+
+					<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+					<h1>Taller Infraestructura como Codigo</h1>
+					</section>
+
+					<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+					<h1>Taller Configuracion como Codigo</h1>
+					</section>
+
+					<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+					<h1>Taller Datos como Codigo</h1>
+					</section>
+
+					<section>
+						<p>Integración Contínua </p>
+						<p>Pipeline de Software</p>
+						<p>Manejo del proceso de despliegue</p>						
+					</section>
+					<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+					<h1>Taller Pipeline</h1>
+					</section>
+				</section>
+
+				<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+					
+					<section>
+						<img style="float: left" class="no-border"  width="7%" src="images/rombo.svg" />
+						<h1 style="float: left">Mejora continua y operación</h1>					
+					</section>
+				
+					<section>
+						<p>Monitoreo</p>
+						<p>Retroalimentación</p>
+						<p>Aprendizaje Contínuo y Experimentación</p>
+						<p>Seguridad Informatica</p>
+					</section>
+
+					<section>
+						<h3>Monitoreo</h3>						
+					</section>
+
+					<section>
+						<ul>
+							<li>Alerts</li>
+							<li>Tickets</li>
+							<li>Logging</li>
+						</ul>
+					</section>
+
 					<section>
 						<h3 >SRE - Site Reliability Engineering</h3>						
 						<blockquote cite="https://landing.google.com/sre/book/chapters/introduction.html">
@@ -305,68 +425,6 @@
 
 						Efficiency and Performance
 						</aside>
-					</section>
-
-
-
-				</section>
-
-				<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-					
-					<section>
-						<img style="float: left" class="no-border"  width="6%" src="images/rombo.svg" />
-						<h1>Dimensiones del Software</h1>
-					</section>
-				
-					<section>						
-						<p>Dimensiones</p>
-						<p>Administración de Codigo </p>
-						<p>Administración de Datos</p>
-						<p>Administración de Configuracion</p>
-						<p>Administración de Infraestructura</p>
-					</section>
-
-				</section>
-
-				<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-					
-					<section>
-						<img style="float: left" class="no-border"  width="7%" src="images/rombo.svg" />
-						<h3 style="float: left">Integracion Continua y Entrega Continua</h3>
-					</section>
-				
-					<section>
-						<p>Integración Contínua </p>
-						<p>Pipeline de Software</p>
-						<p>Manejo del proceso de despliegue</p>						
-					</section>
-
-				</section>
-
-				<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-					
-					<section>
-						<img style="float: left" class="no-border"  width="7%" src="images/rombo.svg" />
-						<h3 style="float: left">Mejora continua y operación</h3>					
-					</section>
-				
-					<section>
-						<p>Monitoreo</p>
-						<p>Retroalimentación</p>
-						<p>Aprendizaje Contínuo y Experimentación</p>
-						<p>Seguridad Informatica</p>
-					</section>
-
-					<section>
-						<h3>Monitoreo</h3>						
-					</section>
-
-					<section>
-						<ul>
-							<li>Alerts</li>
-							<li>Tickets</li>
-							<li>Logging</li>
-						</ul>
 					</section>
 
 				</section>
