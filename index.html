@@ -167,13 +167,13 @@
 						<h2>Aprendizaje Contínuo y Experimentación</h2>
 						Kaizen
 						<img src="images/devops_kaizen.png" class="no-border" width="10%" />
-						
+						<img src="images/devops_muda_mura_muri.png" class="no-border" width="50%" />
 						
 					</section>
 										<section>
 						<h2>Aprendizaje Contínuo y Experimentación</h2>
-						Kaizen						
-						<img src="images/devops_muda_mura_muri.png" class="no-border" width="50%" />
+						Ciclo de Deming
+						<img src="images/devops_ciclo_deming.png" class="no-border" width="50%" />
 
 						
 						<aside class="notes">							
@@ -254,10 +254,126 @@
 						</aside>
 					</section>
 					<section>
-						<h3>12 Factor app</h3>	
+						<h3><a href="https://12factor.net/">12 Factor app</a></h3>
+						<p>I. Codebase</p>
+						<p class="fragment current-visible">One codebase in revision control, many deploys</p>
+						<p>II. Dependencies</p>
+						<p class="fragment current-visible">Explicitly declare and isolate dependencies</p>
+						<p>III. Config</p>
+						<p class="fragment current-visible">Store config in the environment</p>
+						<p>IV. Backing services</p>
+						<p class="fragment current-visible">Treat backing services as attached resources</p>
+						<aside class="notes">							
+							I: Code
+							<ul>
+								<li>All deploys from single code base (many code bases are many apps and each must have 12 factor)</li>
+								<li>Deploy is running instance of app</li>
+								<li>One to one between app and codebase</li>
+							</ul>
 
+							II: Dependencies
+							<ul>
+							<li>Never relies on implicit existence of system-wide packages</li>
+							<li>Dependency declaration and isolation must always be used together (dependency declaration manifest, dependency isolation tool)</li>
+							<li>Dont "shell out" to system tools</li>
+							</ul>
+							III: Config
+							<ul>
+							<li>Whatever varies between deploys</li>
+							<li>Litmus Test: Can code base be made public without compromising credentials?</li>
+							<li>Env variables: independent and not grouped</li>
+							</ul>
+							IV: Backing Services
+							<ul>
+							<li>Backing service is any service the app consumes over the network.</li>
+							<li>Makes no distinction between local and third party service.</li>
+							<li>Every service is a resource that can be attached or deatached at will(no code changes)</li>
+							</ul>
+							
+						</aside>
 					</section>
+										<section>
+						<h3><a href="https://12factor.net/">12 Factor app</a></h3>
+						<p>V. Build, release, run</p>
+						<p class="fragment current-visible">Strictly separate build and run stages</p>
+						<p>VI. Processes</p>
+						<p class="fragment current-visible">Execute the app as one or more stateless processes</p>
+						<p>VII. Port binding</p>
+						<p class="fragment current-visible">Export services via port binding</p>
+						<p>VIII. Concurrency</p>
+						<p class="fragment current-visible">Scale out via the process model</p>
+						<aside class="notes">							
+							V: Build, release, run
+							<ul>
+							<li>Build Stage: transform code to executable(build)</li>
+							<li>Release Stage:Take build and combine with deploy config(relase)</li>
+							<li>Run Stage:Runs app in execution environment</li>
+							<li>Every release unique ID</li>
+							</ul>
 
+							VI: Processes
+							<ul>
+							<li>Each app as one or more processes</li>
+							<li>Stateless: dont carry state between transactions</li>
+							<li>Persistence is done through a backing service</li>
+							<li>Stiky sessions violate 12 factor</li>
+							</ul>
+							VII: Port binding
+							<ul>
+							<li>Self-contained(no runtime injection into system web server)</li>
+							<li>All processing occurs in user space</li>
+							<li>One app can become backing service for another app.</li>
+							</ul>
+							VIII: Concurrency
+							<ul>
+							<li>Scaly horizontally by spawning more app processes</li>
+							<li>App Should never daemonize (Rely on Os system process manager)</li>
+							
+							</ul>
+							
+						</aside>
+					</section>
+					<section>
+						<h3><a href="https://12factor.net/">12 Factor app</a></h3>
+						<p>IX. Disposability</p>
+						<p class="fragment current-visible">Maximize robustness: fast startup and graceful shutdown</p>
+						<p>X. Dev/prod parity</p>
+						<p class="fragment current-visible">Keep "environments" as similar as possible</p>
+						<p>XI. Logs</p>
+						<p class="fragment current-visible">Treat logs as event streams</p>
+						<p>XII. Admin processes</p>
+						<p class="fragment current-visible">Run admin/management tasks as one-off processes</p>
+						<aside class="notes">							
+							IX: Disposability
+							<ul>
+							<li>Processes can be started or stopped at any time</li>							
+							<li>Fast startup</li>
+							<li>Shutdown gracefully with SIGTERM</li>
+							<li>Robust agains sudden death (hardware failure)</li>							
+							</ul>
+
+							X: Dev/prod parity
+							<ul>
+							<li>Reduce dev and prod gaps:</li>
+							<li>Time gap: write code and deploy it hours or minutes later</li>
+							<li>Personnel gap: Devs who wrote code are involved in deploying it and watching it in prod</li>
+							<li>Tools gap: development and production as similar as possible(also dbs)</li>
+							</ul>
+							XI: Logs
+							<ul>
+							<li>App never concerns itself with routing or storage of output stream (STDOUT)</li>
+							<li>Log files configured by execution environment</li>
+							<li>Capture and analize logs (splunk,Haddop ..) (Find events, graph trends, active alerting)</li>
+							</ul>
+							XII: Admin processes
+							<ul>
+							<li>Admin code must ship with application code to avoid sync issues</li>
+							<li>Admin processes should be standalone</li>
+							<li>Run admin scripts with same environment as app (REPL)</li>													
+							</ul>
+							
+						</aside>
+					</section>
 					<section>
 						<h2>Ganado vs Mascotas | Servidores fenix vs Copo de nieve</h2>
 					</section>
