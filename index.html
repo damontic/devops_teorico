@@ -157,14 +157,14 @@
 							Mistakes are punished (Blameless postmortems) Ejemplo gitlab y amazon
 							Suggestions or problems are viewed as whistle blowers and troublemakers
 							- Experiments encouraged
-							Enabled by standarization of procedures and documentation of results
+							Enabled by standardization of procedures and documentation of results
 							- We are all lifelong learners who must take risks in our daily work.
 							Apply scientific approach to process improvement and product development
 							Learn from successes and failures!
 							Local learnings are turned intro global improvements!
 							"Even more important than daily work is the improvement of daily work"
 							In the absence of improvements processes degrade over time.
-							Shedule time to improve: Kaizen blitzes
+							Schedule time to improve: Kaizen blitzes
 							From: Devops Handbook
 						</aside>
 					</section>
@@ -195,9 +195,9 @@
 							<aside class="notes">
 								<ul>
 									<li>
-										Responsivnes: is the cornesrstone of usability and utility
+										Responsiveness: is the cornerstone of usability and utility
 										it means that problems may be detected quickly
-										Rapid, consistent, responce times, with reliable upper bounds.
+										Rapid, consistent, response times, with reliable upper bounds.
 										This simplifies error handling, builds confidence and encourages further interaction.
 									</li>
 									<li>
@@ -213,7 +213,7 @@
 									<li>
 										Message Driven: Asynchronous message passing
 										Delegate failures as messages.
-										Back-preassure (components must tell when under stress)
+										Back-pressure (components must tell when under stress)
 										Non-blocking communication
 									</li>
 								</ul>
@@ -252,7 +252,7 @@
 								<ul>
 									<li>Backing service is any service the app consumes over the network.</li>
 									<li>Makes no distinction between local and third party service.</li>
-									<li>Every service is a resource that can be attached or deatached at will(no code changes)</li>
+									<li>Every service is a resource that can be attached or detached at will(no code changes)</li>
 								</ul>
 								
 							</aside>
@@ -271,14 +271,14 @@
 								V: Build, release, run
 								<ul>
 									<li>Build Stage: transform code to executable(build)</li>
-									<li>Release Stage:Take build and combine with deploy config(relase)</li>
+									<li>Release Stage:Take build and combine with deploy config(release)</li>
 									<li>Run Stage:Runs app in execution environment</li>
 									<li>Every release unique ID</li>
 								</ul>
 								VI: Processes
 								<ul>
 									<li>Each app as one or more processes</li>
-									<li>Stateless: dont carry state between transactions</li>
+									<li>Stateless: don't carry state between transactions</li>
 									<li>Persistence is done through a backing service</li>
 									<li>Stiky sessions violate 12 factor</li>
 								</ul>
@@ -313,7 +313,7 @@
 									<li>Processes can be started or stopped at any time</li>
 									<li>Fast startup</li>
 									<li>Shutdown gracefully with SIGTERM</li>
-									<li>Robust agains sudden death (hardware failure)</li>
+									<li>Robust against sudden death (hardware failure)</li>
 								</ul>
 								X: Dev/prod parity
 								<ul>
@@ -326,7 +326,7 @@
 								<ul>
 									<li>App never concerns itself with routing or storage of output stream (STDOUT)</li>
 									<li>Log files configured by execution environment</li>
-									<li>Capture and analize logs (splunk,Haddop ..) (Find events, graph trends, active alerting)</li>
+									<li>Capture and analyze logs (splunk,Haddop ..) (Find events, graph trends, active alerting)</li>
 								</ul>
 								XII: Admin processes
 								<ul>
@@ -338,8 +338,15 @@
 							</aside>
 						</section>
 						<section>
-							<h2>Ganado vs Mascotas | Servidores fenix vs Copo de nieve</h2>
+							<h2>Ganado vs Mascotas</h2>
+							<img src="images/devops_pets_cattle.png" class="no-border" width="50%">
+							<p class="fragment">
+							  <img src="images/devops_fenix.png" class="no-border" width="10%" style="float: left">
+							  Servidores Fenix vs Copo de nieve
+							  <img src="images/devops_snowflake.png" class="no-border" width="10%" style="float: right">
+							</p>
 						</section>
+						
 						
 						<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 							<h1>Ejercicio</h1>
@@ -353,11 +360,11 @@
 						</section>
 						
 						<section>
-							<p>Dimensiones</p>
-							<p>Administración de Infraestructura</p>
-							<p>Administración de Configuracion</p>
-							<p>Administración de Codigo </p>
-							<p>Administración de Datos</p>
+							<h3>Dimensiones</h3>
+							<p>Infraestructura <span class="white-font fragment highlight-blue">como código</span></p>
+							<p>Configuración <span class="white-font fragment highlight-blue">como código</span></p>
+							<p>Código <span class="white-font">como código</span></p>
+							<p>Datos <span class="white-font fragment highlight-blue">como código</span></p>
 						</section>
 						<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 							<h1>Taller Infraestructura como Codigo</h1>
