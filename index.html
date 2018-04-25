@@ -113,6 +113,7 @@
 					<section>
 						<h1>
 						Ejercicio
+						Flujo de valor y mejoras
 						</h1>
 					</section>
 					<section>
@@ -350,6 +351,7 @@
 						
 						<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 							<h1>Ejercicio</h1>
+							En que diferimos? Como podríamos mejorarlo?
 						</section>
 					</section>
 					<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
@@ -383,35 +385,66 @@
 							<img src="images/dim_azure_rm.png" class="no-border" width="100px">
 							<img src="images/dim_google_dm.png" class="no-border" width="100px">
 							<img src="images/dim_xen.svg.png" class="no-border" width="100px">
-																
-
 						</section>
+						<section>
+							Crear y manejar
+							Hardware
+							Networking
+							Middleware
+							External Services
+
+							Environment: Hardware conf of servers: CPU, Memory, NIC. Network infrastructure.
+
+							All environments and services that support them: DNS, firewalls, routers, version control repositories
+							storage, monitoring applications, mail servers.
+
+
+
+						</section>						
 						<section>
 							<h3>Beneficios</h3>
 							Respuesta rapida a cambio de requerimientos
 							Consolidado
 							Hardware estandarizado
-
 						</section>
 
 						<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 							<h1>Taller Infraestructura como Código</h1>
+							<aside class="notes">
+								Terraform:
+									Construir 1 máquina jenkins con acceso por ssh
+									Construir 2 máquinas servidor con acceso ssh: Producción, Integración
+									Construir 1 balanceador que se conecte con Producción
+							</aside>
 						</section>
 						<section>
 							<h2>Administración de la Configuración</h2>
 						</section>
+
+						<section>												
+							<h3>Configuración como Código</h3>
+							<img src="images/dim_ansible.png" class="no-border" width="100px">
+							<img src="images/dim_chef.jpg" class="no-border" width="200px">
+							<img src="images/dim_puppet.png" class="no-border" width="100px">
+							<img src="images/dim_saltstack.png" class="no-border" width="200px">
+							<img src="images/dim_xen.svg.png" class="no-border" width="100px">
+						</section>
 						<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 							<h1>Taller Configuración como Código</h1>
+							<aside class="notes">
+								Ansible:
+								Script instalación ansible máquina local
+								Instalar Jenkins
+									Crear Job Jenkins con jenkins file
+								Instalar Ngnix
+							</aside>
 						</section>
 						<section>
 							<h2>Administración del Código</h2>
 						</section>
 						<section>
 							<h2>Administración de los Datos</h2>
-						</section>
-						<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-							<h1>Taller Datos como Código</h1>
-						</section>
+						</section>						
 						<section>
 							<p>Integración Continua </p>
 							<p>Pipeline de Software</p>
@@ -419,6 +452,12 @@
 						</section>
 						<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 							<h1>Taller Pipeline</h1>
+							<aside class="notes">
+								Obtiene código
+								Coloca archivo de imagen dependiendo del ambiente
+								Corre pruebas (no tenga groserías)
+								Despliega (copia carpeta a ngnix)
+							</aside>
 						</section>
 					</section>
 					<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
