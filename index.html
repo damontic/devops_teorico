@@ -403,19 +403,46 @@
 						</section>						
 						<section>
 							<h3>Beneficios</h3>
-							Respuesta rapida a cambio de requerimientos
+							Respuesta rápida a cambio de requerimientos
 							Consolidado
 							Hardware estandarizado
 						</section>
 
 						<section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-							<h1>Taller Infraestructura como Código</h1>
+							<h3>Taller Infraestructura como Código</h1>
 							<aside class="notes">
 								Terraform:
 									Construir 1 máquina jenkins con acceso por ssh
 									Construir 2 máquinas servidor con acceso ssh: Producción, Integración
 									Construir 1 balanceador que se conecte con Producción
 							</aside>
+						</section>
+						<section>
+							<ol>
+								<li>Instalar <a href="https://www.terraform.io/downloads.html">Terraform</a> </li>
+								<li>Leer <a href="https://www.terraform.io/intro/index.html">Introducción</a> a Terraform</li>
+								<li>Instalar <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest">Azure Cli</a></li>								
+								<li>Leer <a href="https://www.terraform.io/intro/getting-started/build.html">Tutorial Construcción</a> </li>
+								<li>Crear una maquina virtual en azure: <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure">ejemplo</a></li>
+							</ol>
+							<aside class="notes">
+								https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure
+								https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest
+							</aside>
+						</section>
+						<section>
+							<p>Crear:</p>
+							<ul>
+								<li>2 máquinas Servidor (Producción, Integración)</li>
+								<li>1 máquina Jenkins</li>
+								<li>1 Balanceador conectado a máquina Producción</li>								
+							</ul>
+							<p>Probar:</p>
+							<ul>
+								<li>Ssh a Jenkins</li>
+								<li>Ssh a Servidores</li>
+								<li>Ssh de Jenkins a Servidor</li>
+							</ul>
 						</section>
 						<section>
 							<h2>Administración de la Configuración</h2>
@@ -444,6 +471,11 @@
 						</section>
 						<section>
 							<h2>Administración de los Datos</h2>
+						</section>
+						<section>												
+							<h3>Datos como Código</h3>
+							<img src="images/dim_liquibase.png" class="no-border" width="100px">
+							<img src="images/dim_flyway.png" class="no-border" width="200px">						
 						</section>						
 						<section>
 							<p>Integración Continua </p>
