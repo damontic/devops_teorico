@@ -36,24 +36,6 @@
             </blockquote>
         </section>
 
-        <!--Contenido-->
-        <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-
-            <section>
-                <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
-                <h1>Contenido</h1>
-            </section>
-
-            <section>
-                <h2>Contenido</h2>
-                <p class="fragment"><a href="devops.html">Devops</a></p>
-                <p class="fragment">Conceptos</p>
-                <p class="fragment">Dimensiones del Software</p>
-                <p class="fragment">Mejora Continua y Operación</p>
-            </section>
-
-        </section>
-
         <!--Devops-->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
@@ -625,11 +607,6 @@
             </section>
         </section>
 
-        <!--Que gracias-->
-        <section data-background="url('images/logo_esquina_intro_end.svg'), linear-gradient(to right, #443548, #b71930, #e94635)"
-                 data-background-position="right bottom" data-background-repeat="no-repeat">
-            <h1 class="white-font">Muchas Gracias</h1>
-        </section>
     </div>
 </div>
 <script src="lib/js/head.min.js"></script>
@@ -641,20 +618,11 @@
                 Reveal.initialize({
                     defaultTiming: 120,
                     zoomKey: 'shift',
-                    multiplex: {
-                        // Example values. To generate your own, see the socket.io server instructions.
-                        secret: '15173156059638405765', // Obtained from the socket.io server. Gives this (the master) control of the presentation
-                        id: 'f01ffe0db2f20583', // Obtained from socket.io server
-                        url: 'http://192.168.6.50:1948' // Location of socket.io server
-                    },
                     dependencies: [
                         { src: 'plugin/markdown/marked.js' },
                         { src: 'plugin/markdown/markdown.js' },
                         { src: 'plugin/zoom-js/zoom.js', async: true },
                         { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                        { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
-                        { src: 'plugin/multiplex/master.js', async: true },
-                        { src: 'plugin/notes-server/client.js', async: true },
                         { src: 'plugin/notes/notes.js', async: true }
                     ]
                 });

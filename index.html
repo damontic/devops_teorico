@@ -31,9 +31,6 @@
             <img class="no-border" width="5%" src="images/rombo.svg"/>
             <img class="no-border" width="13%" src="images/s4n.svg"/>
             <h1 class="white-font">Devops</h1>
-            <blockquote class="white-font" cite="https://landing.google.com/sre/book/chapters/introduction.html">
-                &ldquo;Hope is not a strategy.&rdquo;
-            </blockquote>
         </section>
 
         <!--Contenido-->
@@ -48,8 +45,8 @@
                 <h2>Contenido</h2>
                 <p><a href="devops.html" />Devops</a></p>
                 <p><a href="iac.html" />Infraestructura como Código</p>
-                <p><a href="configuration.html" />Configuración como código</p>
-                <p><a href="data.html" />Data como código</p>
+                <p><a href="configuration.html" />Configuración como Código</p>
+                <p><a href="data.html" />Data como Código</p>
                 <p><a href="code.html" />Aplicación</p>
                 <p><a href="monitoreo.html" />Monitoreo</p>
             </section>
@@ -67,20 +64,11 @@
 				Reveal.initialize({
 					defaultTiming: 120,
 					zoomKey: 'shift',
-					multiplex: {
-						// Example values. To generate your own, see the socket.io server instructions.
-						secret: '15173156059638405765', // Obtained from the socket.io server. Gives this (the master) control of the presentation
-						id: 'f01ffe0db2f20583', // Obtained from socket.io server
-						url: 'http://192.168.6.50:1948' // Location of socket.io server
-					},
 					dependencies: [
 						{ src: 'plugin/markdown/marked.js' },
 						{ src: 'plugin/markdown/markdown.js' },
 						{ src: 'plugin/zoom-js/zoom.js', async: true },
 						{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-						{ src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
-						{ src: 'plugin/multiplex/master.js', async: true },
-						{ src: 'plugin/notes-server/client.js', async: true },
 						{ src: 'plugin/notes/notes.js', async: true }
 					]
 				});
