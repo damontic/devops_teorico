@@ -1,10 +1,8 @@
 /**
- * White theme for reveal.js. This is the opposite of the 'black' theme.
+ * S4N theme for reveal.js.
  *
- * By Hakim El Hattab, http://hakim.se
  */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 html:before, html:after, body:before, body:after {
   content: "";
   position: fixed;
@@ -60,6 +58,10 @@ html:before, html:after, body:before, body:after {
 .reveal svg.container {
   float: left; }
 
+textarea {
+  font-size: 50px;
+  border: 1px; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -103,7 +105,7 @@ body {
 .reveal h6 { }
 
 .reveal h1 {
- font-size: 2.5em;}
+  font-size: 2.5em; }
 
 .reveal h2 {
   font-size: 1.6em; }

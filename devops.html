@@ -36,16 +36,114 @@
             </blockquote>
         </section>
 
-        <!--Componentes Proyecto de Software-->
+        <!--Proyectos de Software-->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
             <section>
                 <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
-                <h1>Componentes Proyecto de Software</h1>
+                <h1>Proyectos de Software</h1>
             </section>
 
             <section>
-                <h2>Problemas comunes</h2>
+                <h2>Producto</h2>
+                <p>¿Características Deseadas?</p>
+                <textarea rows=7 placeholder="e.g. Confiable"></textarea>
+                <aside class="notes">
+                    <ul>
+                        <li>Eficaz</li>
+                        <li>Resuelva un problema</li>
+                        <li>Confiable</li>
+                        <li>Seguro</li>
+                        <li>Altamente Disponible</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="stretch">
+                <h2>Características no funcionales</h2>
+                <table>
+                    <tbody>
+                        <tr class="fragment">
+                            <td>Accesible</td>
+                            <td>Adaptable</td>
+                            <td>Auditable</td>
+                            <td>Disponible</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Versionable</td>
+                            <td>Recuperable</td>
+                            <td>Certificable</td>
+                            <td>Administrable</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Integro</td>
+                            <td>Documentado</td>
+                            <td>Durable</td>
+                            <td>Efectivo</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Eficiente</td>
+                            <td>Efectivo</td>
+                            <td>Resiliente</td>
+                            <td>Legal</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Interoperable</td>
+                            <td>Mantenible</td>
+                            <td>Modificable</td>
+                            <td>Portable</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Seguro</td>
+                            <td>De calidad</td>
+                            <td>Entendible</td>
+                            <td>Monitoreable</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Responsive</td>
+                            <td>Robusto</td>
+                            <td>Escalable</td>
+                            <td>Estable</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Compatible</td>
+                            <td>Testeable</td>
+                            <td>Transparente</td>
+                            <td>UXeable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Roles</h2>
+                <textarea row="8" placeholder="e.g. Developers">Developers</textarea>
+            </section>
+
+            <section>
+                <h2>Roles</h2>
+                <ul>
+                    <li class="fragment">Developers</li>
+                    <li class="fragment">Functional Testers</li>
+                    <li class="fragment">Non Functional Testers</li>
+                    <li class="fragment">System Reliability Engineers</li>
+                    <li class="fragment">Automation Engineers</li>
+                    <li class="fragment">Cloud Engineers</li>
+                    <li class="fragment">Networking Engineers</li>
+                    <li class="fragment">Security Official</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Proyecto</h2>
+                <ul>
+                    <li class="fragment">ROI</li>
+                    <li class="fragment">Time to Market</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Problemas</h2>
                 <ul>
                     <li class="fragment">Despliegue de Software manual</li>
                     <li class="fragment">Desplegar a un ambiente Productivo por primera vez solamente cuando se termina el Desarrollo</li>
@@ -66,7 +164,7 @@
             </section>
 
             <section data-background="url('images/elephant.png')" data-background-size="20%" data-background-repeat="no-repeat"
-                     data-background-position="90% 65%">
+                     data-background-position="85% 60%">
                 <h2>¿Qué es DevOps?</h2>
                 <ul>
                     <li class="fragment">¿Es un rol?</li>
@@ -116,18 +214,10 @@
 
             <section>
                 <h3>Dimensiones</h3>
-                <p>Infraestructura <span class="white-font fragment highlight-blue">como código</span></p>
-                <p>Configuración <span class="white-font fragment highlight-blue">como código</span></p>
-                <p>Aplicaciones <span class="white-font">como código</span></p>
-                <p>Datos <span class="white-font fragment highlight-blue">como código</span></p>
-            </section>
-
-            <section>
-                <h3>Mecanismos Administración</h3>
-                <p>Versionamiento</p>
-                <p>Análisis estático</p>
-                <p>Pruebas</p>
-                <p>Auditoria de Seguridad</p>
+                <p class="fragment">Infraestructura <span class="white-font highlight-blue">como código</span></p>
+                <p class="fragment">Configuración <span class="white-font highlight-blue">como código</span></p>
+                <p class="fragment">Aplicaciones <span class="white-font">como código</span></p>
+                <p class="fragment">Datos <span class="white-font highlight-blue">como código</span></p>
             </section>
 
             <section>
@@ -163,45 +253,6 @@
                 Hardware estandarizado
             </section>
 
-            <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-                <h3>Taller Infraestructura como Código</h1>
-                    <aside class="notes">
-                        Terraform:
-                        Construir 1 máquina jenkins con acceso por ssh
-                        Construir 2 máquinas servidor con acceso ssh: Producción, Integración
-                        Construir 1 balanceador que se conecte con Producción
-                    </aside>
-            </section>
-
-            <section>
-                <ol>
-                    <li>Instalar <a href="https://www.terraform.io/downloads.html">Terraform</a></li>
-                    <li>Leer <a href="https://www.terraform.io/intro/index.html">Introducción</a> a Terraform</li>
-                    <li>Instalar <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest">Azure Cli</a></li>
-                    <li>Leer <a href="https://www.terraform.io/intro/getting-started/build.html">Tutorial Construcción</a></li>
-                    <li>Crear una maquina virtual en azure: <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure">ejemplo</a>
-                    </li>
-                </ol>
-                <aside class="notes">
-                    https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure
-                    https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest
-                </aside>
-            </section>
-
-            <section>
-                <p>Crear:</p>
-                <ul>
-                    <li>2 máquinas Servidor (Producción, Integración)</li>
-                    <li>1 máquina Jenkins</li>
-                    <li>1 Balanceador conectado a máquina Producción</li>
-                </ul>
-                <p>Probar:</p>
-                <ul>
-                    <li>Ssh a Jenkins</li>
-                    <li>Ssh a Servidores</li>
-                    <li>Ssh de Jenkins a Servidor</li>
-                </ul>
-            </section>
             <section>
                 <h2>Administración de la Configuración</h2>
             </section>
@@ -213,17 +264,6 @@
                 <img src="images/dim_puppet.png" class="no-border" width="100px">
                 <img src="images/dim_saltstack.png" class="no-border" width="200px">
                 <img src="images/dim_xen.svg.png" class="no-border" width="100px">
-            </section>
-
-            <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-                <h1>Taller Configuración como Código</h1>
-                <aside class="notes">
-                    Ansible:
-                    Script instalación ansible máquina local
-                    Instalar Jenkins
-                    Crear Job Jenkins con jenkins file
-                    Instalar Ngnix
-                </aside>
             </section>
 
             <section>
@@ -255,6 +295,7 @@
                     Despliega (copia carpeta a ngnix)
                 </aside>
             </section>
+
         </section>
 
         <!--Conceptos-->
