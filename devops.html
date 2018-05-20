@@ -124,18 +124,12 @@
             <section data-background="url('images/soft_engine.jpg')" data-background-size="13%" data-background-repeat="no-repeat"
                      data-background-position="90% 8%">
                 <h2>Personas - Roles</h2>
-                <ul>
-                    <li class="fragment">Software Architects</li>
-                    <li class="fragment">Developers</li>
-                    <li class="fragment">Functional Testers</li>
-                    <li class="fragment">Non Functional Testers</li>
-                    <li class="fragment">System Reliability Engineers</li>
-                    <li class="fragment">Automation Engineers</li>
-                    <li class="fragment">Cloud Engineers</li>
-                    <li class="fragment">Networking Engineers</li>
-                    <li class="fragment">Security Official</li>
-                    <li class="fragment">Gerentes de Proyecto</li>
-                </ul>
+                <table class="stretch"><tbody class="stretch">
+                    <tr class="fragment"><td>Software Architects</td><td>Networking Engineers</td><td>Developers</td></tr>
+                    <tr class="fragment"><td>Build Engineer</td><td>System Retrabitrty Engineers</td><td>Automation Engineers</td></tr>
+                    <tr class="fragment"><td>Security Official</td><td>Functional Testers</td><td>Non Functional Testers</td></tr>
+                    <tr class="fragment"><td>Designers</td><td>Cloud Engineers</td><td>Gerentes de Proyecto</td></tr>
+                </tbody></table>
             </section>
 
             <section data-background="url('images/itil_six.jpg')" data-background-size="13%" data-background-repeat="no-repeat"
@@ -244,6 +238,7 @@ rm -rf "$STEAMROOT/"*
             <section>
                 <h3>Organizaciones de Alto Redimiento</h3>
                 <p class="fragment">¿Alguien lo ha logrado?</p>
+                <p class="fragment">Resuelven estos problemas de la misma forma?</p>
             </section>
 
            <section>
@@ -269,7 +264,7 @@ rm -rf "$STEAMROOT/"*
             <section>
                 <h3>Conclusión</h3>
                 <ul>
-                    <li class="fragment">Inclusive las más grandes empresas han tenido fallas</li>
+                    <li class="fragment">Las más grandes empresas han tenido fallas</li>
                     <li class="fragment">Hacer Software es complejo</li>
                 </ul>
                 <math class="fragment" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -302,7 +297,7 @@ rm -rf "$STEAMROOT/"*
 
             <section>
                 <h3>¿DevOps?</h3>
-                <img src="images/que_no_es.png" />
+                <img src="images/que_no_es.png" width="85%" height="85%" />
                 <aside class="notes">
                     <ul>
                         <li>¿Es un rol?</li>
@@ -344,7 +339,7 @@ rm -rf "$STEAMROOT/"*
                 <ul>
                     <li class="fragment">Fenómeno <b>Cultural</b></li>
                     <li class="fragment">Los Desarrolladores de Aplicaciones deben ser <b>conscientes</b> de las necesidades de Operación</li>
-                    <li class="fragment"><b>Las personas de Operación deben <b>facilitar</b> el despliegue</b></li>
+                    <li class="fragment">Las personas de Operación deben <b>facilitar</b> el despliegue</li>
                     <li class="fragment"><b>Colaboración</b></li>
                 </ul>
             </section>
@@ -358,6 +353,13 @@ rm -rf "$STEAMROOT/"*
                     <li class="fragment">para <b>automatizar</b></li>
                     <li class="fragment">y así poder garantizar una <b>Entrega Continua</b>.</li>
                     </ul>
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>DevOps</h3>
+                <blockquote>
+                    Desarrolladores y Operaciones trabajando conjuntamente.
                 </blockquote>
             </section>
 
@@ -428,6 +430,20 @@ rm -rf "$STEAMROOT/"*
                 <h3>Datos como Código</h3>
                 <img src="images/dim_liquibase.png" class="no-border" width="100px">
                 <img src="images/dim_flyway.png" class="no-border" width="200px">
+            </section>
+
+            <section>
+                <h3>Datos como Código</h3>
+                <table>
+                    <tbody>
+                        <tr><td>DEV</td><td>Developers</td></tr>
+                        <tr><td>BUILD</td><td>Build Engineer</td></tr>
+                        <tr><td>QA</td><td>QA Team</td></tr>
+                        <tr><td>SIT</td><td>Integration Testers</td></tr>
+                        <tr><td>UAT</td><td>User Test</td></tr>
+                        <tr><td>PROD</td><td>Operations</td></tr>
+                    </tbody>
+                </table>
             </section>
 
             <section>
