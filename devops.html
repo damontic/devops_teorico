@@ -36,7 +36,7 @@
             </blockquote>
         </section>
 
-        <!-- ¿En donde estamos ahora? Puntos encomún: Proyectos de Software -->
+        <!-- ¿En donde estamos ahora? Puntos en común: Proyectos de Software -->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
             <section>
@@ -47,28 +47,8 @@
                 </blockquote>
             </section>
 
-            <!-- Historia -->
-            <section data-background="url('images/banana.jpg')" data-background-size="20%" data-background-repeat="no-repeat"
-                     data-background-position="85% 60%">
-                <h2>Banana Corp</h2>
-                <ul>
-                    <li class="fragment">Mejores devs y ops de todo el mundo</li>
-                    <ul>
-                        <li class="fragment">Tiempo desarrollo nuevas características: 1 día</li>
-                        <li class="fragment">Tiempo de despliegues: 1 día</li>
-                        <li class="fragment">Dificil comunicación: 8 días</li>
-                        <li class="fragment"><b>Tiempo de Cíclo: 10 días</b></li>
-                    </ul>
-                    <li class="fragment">Solicitud de mejora en tiempos</li>
-                    <ul>
-                        <li class="fragment">Mejora del 50% en cada área</li>
-                        <li class="fragment"><b>Tiempo de Cíclo: 9 días</b></li>
-                    </ul>
-                </ul>
-            </section>
-
-            <!-- Problema -->
-            <section>
+            <section data-background="url('images/timee.jpg')" data-background-size="13%" data-background-repeat="no-repeat"
+                     data-background-position="5% 8%">
                 <h2>Enfoque clásico</h2>
                 <ul>
                     <li class="fragment"><b>Características del Producto</b></li>
@@ -142,7 +122,7 @@
             </section>
 
             <section>
-                <h2>¿Quienes lo crean?</h2>
+                <h2>Personas - Roles</h2>
                 <ul>
                     <li class="fragment">Developers</li>
                     <li class="fragment">Functional Testers</li>
@@ -152,23 +132,12 @@
                     <li class="fragment">Cloud Engineers</li>
                     <li class="fragment">Networking Engineers</li>
                     <li class="fragment">Security Official</li>
-                </ul>
-            </section>
-
-            <!-- Curiosidad de personas -->
-            <section>
-                <h2>Problemas</h2>
-                <ul>
-                    <li class="fragment">Despliegue de Software manual</li>
-                    <li class="fragment">Desplegar a un ambiente Productivo por primera vez solamente cuando se termina el Desarrollo</li>
-                    <li class="fragment">Configuración manual de ambientes, incluyendo Producción</li>
-                    <li class="fragment">Falta de Visibilidad de Problemas: Monitoreo</li>
-                    <li class="fragment">Inseguridad</li>
+                    <li class="fragment">Gerentes de Proyecto</li>
                 </ul>
             </section>
 
             <section>
-                <h2>Proyecto</h2>
+                <h2>Conceptos del Enfoque clásico</h2>
                 <ul>
                     <li class="fragment">ROI</li>
                     <li class="fragment">Time to Market</li>
@@ -177,7 +146,127 @@
                     <li class="fragment">Value Stream Mapping</li>
                     <li class="fragment">Kaizen</li>
                     <li class="fragment">Bus Factor</li>
+                    <li class="fragment">Six Sigma</li>
                 </ul>
+            </section>
+
+            <section>
+                <h3>Errare humanum est</h3>
+                <img src="images/problemas.png" />
+            </section>
+
+            <section>
+                <h3>Despliegues Famosos (por las consecuencias negativas)</h3>
+                <p>
+                <ul>
+                    <li class="fragment"><b>Negocios:</b>
+                        <ul>
+                            <li class="fragment"><b>Vancouver Stock Exchange</b>: redondeo</li>
+                            <li class="fragment"><a href="https://en.wikipedia.org/wiki/Knight_Capital_Group"><b>Knight Capital Group</b></a>: perdieron 440 millones de dólares en 45 minutos</li>
+                        </ul>
+                    </li>
+                    <li class="fragment"><b>Videojuegos:</b>
+                        <ul>
+                            <li><a href="http://www.pcworld.com/article/2871653/scary-steam-for-linux-bug-erases-all-the-personal-files-on-your-pc.html"><b>Steam</b></a>: actualización borraba las carpetas personales de los usuarios</li>
+                        </ul>
+<pre><code class="hljs">
+STEAMROOT="$(cd "${0%/*}" && echo $PWD)"
+rm -rf "$STEAMROOT/"*
+</code></pre>
+                    </li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h3>Despliegues Famosos (por las consecuencias negativas)</h3>
+                <ul>
+                    <li class="fragment">
+                        <b>Criptografía:</b>
+                        <ul>
+                            <li><b>Apple Computer, Inc:</b> (Unreachable Code) aceptaba cualquier certificado digital</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="fragment">
+                        <b>Seguimiento de Fechas:</b>
+                        <ul>
+                            <li><b>Bank of Queensland:</b> incorrecta conversión de un número hexadecimal</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Problemas (Producto y Proceso)</h2>
+                <ul>
+                    <li class="fragment">Aprovisionamiento de Ambientes</li>
+                    <li class="fragment">Despliegue de Software Manual</li>
+                    <li class="fragment">Desplegar a un ambiente Productivo por primera vez solamente cuando se termina el Desarrollo</li>
+                    <li class="fragment">Configuración manual de ambientes</li>
+                    <li class="fragment">Inseguridad</li>
+                </ul>
+            </section>
+
+            <section data-background="url('images/banana.jpg')" data-background-size="15%" data-background-repeat="no-repeat"
+                     data-background-position="95% 8%">
+                <h2>Banana Corp</h2>
+                <ul>
+                    <li class="fragment">Mejores devs y ops</li>
+                    <ul>
+                        <li class="fragment">Nuevas características: 1 día</li>
+                        <li class="fragment">Despliegues: 1 día</li>
+                        <li class="fragment">Comunicación: 8 días</li>
+                        <li class="fragment"><b>Tiempo de Cíclo: 10 días</b></li>
+                    </ul>
+                    <li class="fragment">Solicitud de mejora en tiempos</li>
+                    <ul>
+                        <li class="fragment">Mejora del 50% en cada área</li>
+                        <li class="fragment"><b>Tiempo de Cíclo: 9 días</b></li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Muro de la Confusión</h3>
+                <img src="images/confusion_wall.png" />
+            </section>
+
+            <section>
+                <h3>Muro de la Confusión</h3>
+                <img src="images/muro_confusion1.png" />
+            </section>
+
+            <section>
+                <h3>Organizaciones de Alto Redimiento</h3>
+                <p class="fragment">¿Alguien lo ha logrado?</p>
+            </section>
+
+           <section>
+                <h3>Organizaciones de Alto Rendimiento</h3>
+                <ul>
+                    <li class="fragment">Amazon, Google, Etsy, Facebook y Netflix: diariamente despliegan más de 100 veces en Producción</li>
+                    <li class="fragment">Algunas organizaciones hacen que las personas recién contratadas desplieguen en Producción</li>
+                    <li class="fragment">La mayoría de Organizaciones lo piensan dos veces antes de desplegar más de dos veces al año</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Organizaciones de Alto Rendimiento</h3>
+                <p>Desde el 2011 hasta el 2017 las organizaciones que usan DevOps</p>
+                <ul>
+                    <li class="fragment">despliegan 30 veces más frecuentemente</li>
+                    <li class="fragment">tuvieron una mejora de 200 veces en su Order Lead Time</li>
+                    <li class="fragment">tuvieron 60 veces menos fallas</li>
+                    <li class="fragment">su MTR fue 166 veces más rápido</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Conclusión</h3>
+                <p class="fragment">Inclusive las más grandes empresas han tenido fallas</p>
+                <p class="fragment">Hacer Software es dificil</p>
             </section>
 
         </section>
@@ -196,10 +285,20 @@
                 <ul>
                     <li class="fragment">¿Es un rol?</li>
                     <li class="fragment">¿Es un equipo aparte?</li>
-                    <li class="fragment">¿Es una tecnología o herramienta?</li>
+                    <li class="fragment">¿Es una metodología, tecnología o herramienta?</li>
                     <li class="fragment">¿Es combinar Desarrollo y Operaciones?</li>
                     <li class="fragment">¿Es automatización de todo?</li>
                     <li class="fragment">¿Es una estrategia que se puede aplicar siempre?</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Historia</h2>
+                <ul>
+                    <li class="fragment">Patrick Debois</li>
+                    <li class="fragment">Gene Kim</li>
+                    <li class="fragment">Jez Humble</li>
+                    <li class="fragment">John Willis</li>
                 </ul>
             </section>
 
@@ -211,9 +310,10 @@
             <section>
                 <h2> Valores DevOps</h2>
                 <img src="images/devops_cams.png" width="60%" cite="http://talesmorais.com/2016/all-devops-culture-is-about-cams/"/>
-                <aside class="notes">
-                    
-                </aside>
+            </section>
+
+            <section>
+                <h2>State of DevOps Report</h2>
             </section>
 
         </section>
@@ -248,30 +348,6 @@
             </section>
 
             <section>
-                Crear y manejar
-                Hardware
-                Networking
-                Middleware
-                External Services
-
-                Environment: Hardware conf of servers: CPU, Memory, NIC. Network infrastructure.
-
-                All environments and services that support them: DNS, firewalls, routers, version control repositories
-                storage, monitoring applications, mail servers.
-            </section>
-
-            <section>
-                <h3>Beneficios</h3>
-                Respuesta rápida a cambio de requerimientos
-                Consolidado
-                Hardware estandarizado
-            </section>
-
-            <section>
-                <h2>Administración de la Configuración</h2>
-            </section>
-
-            <section>
                 <h3>Configuración como Código</h3>
                 <img src="images/dim_ansible.png" class="no-border" width="100px">
                 <img src="images/dim_chef.jpg" class="no-border" width="200px">
@@ -281,33 +357,14 @@
             </section>
 
             <section>
-                <h2>Administración del Código</h2>
-            </section>
-
-            <section>
-                <h2>Administración de los Datos</h2>
-            </section>
-
-            <section>
                 <h3>Datos como Código</h3>
                 <img src="images/dim_liquibase.png" class="no-border" width="100px">
                 <img src="images/dim_flyway.png" class="no-border" width="200px">
             </section>
 
             <section>
-                <p>Integración Continua </p>
-                <p>Pipeline de Software</p>
+                <h3>Aplicaciones</h3>
                 <p>Manejo del proceso de despliegue</p>
-            </section>
-
-            <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-                <h1>Taller Pipeline</h1>
-                <aside class="notes">
-                    Obtiene código
-                    Coloca archivo de imagen dependiendo del ambiente
-                    Corre pruebas (no tenga groserías)
-                    Despliega (copia carpeta a ngnix)
-                </aside>
             </section>
 
         </section>
@@ -577,11 +634,6 @@
                 </p>
             </section>
 
-            <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-                <h1>Ejercicio</h1>
-                En que diferimos? Como podríamos mejorarlo?
-            </section>
-
             <section>
                 <p>Monitoreo</p>
                 <p>Retroalimentación</p>
@@ -601,14 +653,16 @@
                 </ul>
             </section>
 
+        </section>
+
+        <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+
             <section>
-                <h3>SRE - Site Reliability Engineering</h3>
+                <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
+                <h1>Site Reliability Engineering</h1>
                 <blockquote cite="https://landing.google.com/sre/book/chapters/introduction.html">
-                    &ldquo;SRE is what you get when you treat operations as if it’s a software problem&rdquo;Google SRE
+                    &ldquo;SRE is what you get when you treat operations as if it’s a software problem&rdquo;<b> -- Google SRE</b>
                 </blockquote>
-                <aside class="notes">
-                    20 Minutos
-                </aside>
             </section>
 
             <section>
