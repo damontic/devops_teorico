@@ -865,52 +865,20 @@ rm -rf "$STEAMROOT/"*
                 <h3><a href="https://12factor.net/">12 Factor app</a></h3>
                 <table>
                     <tbody>
-                        <tr>
-                            <td></td><td></td>
+                        <tr class="fragment">
+                            <td>I. Codebase</td><td>One codebase in revision control, many deploys</td>
                         </tr>
-                        <tr>
-                            <td></td><td></td>
+                        <tr class="fragment">
+                            <td>II. Dependencies</td><td>Explicitly declare and isolate dependencies</td>
                         </tr>
-                        <tr>
-                            <td></td><td></td>
+                        <tr class="fragment">
+                            <td>III. Config</td><td>Store config in the environment</td>
                         </tr>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-                        <tr>
-                            <td></td><td></td>
-                        </tr>
-                        <tr>
-                            <td></td><td></td>
+                        <tr class="fragment">
+                            <td>IV. Backing services</td><td>Treat backing services as attached resources</td>
                         </tr>
                     </tbody>
                 </table>
-                <p>I. Codebase</p>
-                <p class="fragment">One codebase in revision control, many deploys</p>
-                <p>II. Dependencies</p>
-                <p class="fragment">Explicitly declare and isolate dependencies</p>
-                <p>III. Config</p>
-                <p class="fragment">Store config in the environment</p>
-                <p>IV. Backing services</p>
-                <p class="fragment">Treat backing services as attached resources</p>
                 <aside class="notes">
                     I: Code
                     <ul>
@@ -941,14 +909,22 @@ rm -rf "$STEAMROOT/"*
 
             <section>
                 <h3><a href="https://12factor.net/">12 Factor app</a></h3>
-                <p>V. Build, release, run</p>
-                <p class="fragment">Strictly separate build and run stages</p>
-                <p>VI. Processes</p>
-                <p class="fragment">Execute the app as one or more stateless processes</p>
-                <p>VII. Port binding</p>
-                <p class="fragment">Export services via port binding</p>
-                <p>VIII. Concurrency</p>
-                <p class="fragment">Scale out via the process model</p>
+                <table>
+                    <tbody>
+                        <tr class="fragment">
+                            <td>V. Build, release, run</td><td>Strictly separate build and run stages</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>VI. Processes</td><td>Execute the app as one or more stateless processes</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>VII. Port binding</td><td>Export services via port binding</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>VIII. Concurrency</td><td>Scale out via the process model</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <aside class="notes">
                     V: Build, release, run
                     <ul>
@@ -982,14 +958,22 @@ rm -rf "$STEAMROOT/"*
 
             <section>
                 <h3><a href="https://12factor.net/">12 Factor app</a></h3>
-                <p>IX. Disposability</p>
-                <p class="fragment">Maximize robustness: fast startup and graceful shutdown</p>
-                <p>X. Dev/prod parity</p>
-                <p class="fragment">Keep "environments" as similar as possible</p>
-                <p>XI. Logs</p>
-                <p class="fragment">Treat logs as event streams</p>
-                <p>XII. Admin processes</p>
-                <p class="fragment">Run admin/management tasks as one-off processes</p>
+                <table>
+                    <tbody>
+                        <tr class="fragment">
+                            <td>IX. Disposability</td><td>Maximize robustness: fast startup and graceful shutdown</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>X. Dev/prod parity</td><td>Keep "environments" as similar as possible</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>XI. Logs</td><td>Treat logs as event streams</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>XII. Admin processes</td><td>Run admin/management tasks as one-off processes</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <aside class="notes">
                     IX: Disposability
                     <ul>
