@@ -718,6 +718,9 @@ rm -rf "$STEAMROOT/"*
 
             <section>
                 <h3>Desarrollo Ágil</h3>
+                <p>Manifiesto Ágil</p>
+                <img class="stretch" src="images/agile_manifesto.png">
+                <p>12 principios</p>
             </section>
 
             <section>
@@ -744,14 +747,6 @@ rm -rf "$STEAMROOT/"*
             <section>
                 <h3> CI/CD/CD</h3>
                 <img src="images/ci_cd_cd.png" width="80%"/>
-            </section>
-
-            <section>
-                <h2>Pipeline de Software (CD)</h2>
-            </section>
-
-            <section>
-                <h2>Retroalimentación (CD)</h2>
             </section>
 
             <section>
@@ -809,11 +804,33 @@ rm -rf "$STEAMROOT/"*
             </section>
 
             <section>
-                <h2>Arquitectura de Sistemas (Release It)</h2>
+                <h3>Aprendizaje Continuo y Experimentación</h3>
+                <ul>
+                    <li class="fragment">Learning Management Systems</li>
+                    <li class="fragment">¿Qué tecnologías vienen?</li>
+                    <li class="fragment">¿Qué hemos probado?</li>
+                    <li class="fragment">¿Qué deberíamos probar?</li>
+                    <li class="fragment"><a href="https://www.thoughtworks.com/radar/byor">Crea tu propio radar.</a></li>
+                </ul>
             </section>
 
             <section>
-                <h3>Reactive Manifestó</h3>
+                <h3>Aprendizaje Continuo y Experimentación</h3>
+                <ul>
+                    <li class="fragment"><a src="https://www.thoughtworks.com/radar/techniques">Técnicas</a></li>
+                    <li class="fragment"><a src="https://www.thoughtworks.com/radar/tools">Herramientas</a></li>
+                    <li class="fragment"><a src="https://www.thoughtworks.com/radar/languages-and-frameworks">Lenguajes y Plataformas</a></li>
+                    <li class="fragment"><a src="https://www.thoughtworks.com/radar/platforms">Plataformas</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Arquitectura de Sistemas</h2>
+                <img class="stretch" src="images/releaseit.png">
+            </section>
+
+            <section>
+                <h3>Reactive Manifesto</h3>
                 <img src="images/devops_reactive.svg" width="80%"/>
                 <p class="fragment">Los sistemas grandes están compuestos de sistemas más pequeños y dependen de las propiedades reactivas de estos.</p>
                 <aside class="notes">
@@ -846,14 +863,54 @@ rm -rf "$STEAMROOT/"*
 
             <section>
                 <h3><a href="https://12factor.net/">12 Factor app</a></h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td>
+                        </tr>
+                    </tbody>
+                </table>
                 <p>I. Codebase</p>
-                <p class="fragment current-visible">One codebase in revision control, many deploys</p>
+                <p class="fragment">One codebase in revision control, many deploys</p>
                 <p>II. Dependencies</p>
-                <p class="fragment current-visible">Explicitly declare and isolate dependencies</p>
+                <p class="fragment">Explicitly declare and isolate dependencies</p>
                 <p>III. Config</p>
-                <p class="fragment current-visible">Store config in the environment</p>
+                <p class="fragment">Store config in the environment</p>
                 <p>IV. Backing services</p>
-                <p class="fragment current-visible">Treat backing services as attached resources</p>
+                <p class="fragment">Treat backing services as attached resources</p>
                 <aside class="notes">
                     I: Code
                     <ul>
@@ -885,13 +942,13 @@ rm -rf "$STEAMROOT/"*
             <section>
                 <h3><a href="https://12factor.net/">12 Factor app</a></h3>
                 <p>V. Build, release, run</p>
-                <p class="fragment current-visible">Strictly separate build and run stages</p>
+                <p class="fragment">Strictly separate build and run stages</p>
                 <p>VI. Processes</p>
-                <p class="fragment current-visible">Execute the app as one or more stateless processes</p>
+                <p class="fragment">Execute the app as one or more stateless processes</p>
                 <p>VII. Port binding</p>
-                <p class="fragment current-visible">Export services via port binding</p>
+                <p class="fragment">Export services via port binding</p>
                 <p>VIII. Concurrency</p>
-                <p class="fragment current-visible">Scale out via the process model</p>
+                <p class="fragment">Scale out via the process model</p>
                 <aside class="notes">
                     V: Build, release, run
                     <ul>
@@ -926,13 +983,13 @@ rm -rf "$STEAMROOT/"*
             <section>
                 <h3><a href="https://12factor.net/">12 Factor app</a></h3>
                 <p>IX. Disposability</p>
-                <p class="fragment current-visible">Maximize robustness: fast startup and graceful shutdown</p>
+                <p class="fragment">Maximize robustness: fast startup and graceful shutdown</p>
                 <p>X. Dev/prod parity</p>
-                <p class="fragment current-visible">Keep "environments" as similar as possible</p>
+                <p class="fragment">Keep "environments" as similar as possible</p>
                 <p>XI. Logs</p>
-                <p class="fragment current-visible">Treat logs as event streams</p>
+                <p class="fragment">Treat logs as event streams</p>
                 <p>XII. Admin processes</p>
-                <p class="fragment current-visible">Run admin/management tasks as one-off processes</p>
+                <p class="fragment">Run admin/management tasks as one-off processes</p>
                 <aside class="notes">
                     IX: Disposability
                     <ul>
@@ -975,21 +1032,53 @@ rm -rf "$STEAMROOT/"*
             </section>
 
             <section>
-                <p>Monitoreo</p>
-                <p>Retroalimentación</p>
-                <p>Aprendizaje Continuo y Experimentación</p>
-                <p>Seguridad Informática</p>
-            </section>
-
-            <section>
-                <h3>Monitoreo</h3>
-            </section>
-
-            <section>
+                <h3>Monitoreo y Reacción</h3>
                 <ul>
-                    <li>Alerts</li>
-                    <li>Tickets</li>
-                    <li>Logging</li>
+                    <li class="fragment">Monitoreo de Negocio</li>
+                    <li class="fragment">Monitoreo de Aplicación</li>
+                    <li class="fragment">Monitoreo de Red</li>
+                    <li class="fragment">Monitoreo de Aplicaciones Externas</li>
+                    <li class="fragment">Monitoreo de Infraestructura</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Monitoreo y Reacción</h3>
+                <ul>
+                    <li class="fragment">Definición de Umbrales</li>
+                    <li class="fragment">Ejecución de Lógica</li>
+                    <li class="fragment">Avisos</li>
+                    <li class="fragment">Rollbacks</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Retroalimentación</h3>
+                <ul>
+                    <li class="fragment">Bug Tracker</li>
+                    <li class="fragment">Project Management Tools</li>
+                    <li class="fragment">Team Productivity</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Seguridad Informática</h3>
+                <ul>
+                    <li class="fragment">OpenSSL</li>
+                    <li class="fragment">PGP</li>
+                    <li class="fragment">TLS/SSL</li>
+                    <li class="fragment">Open Web Application Security Project </li>
+                    <li class="fragment">Blockchains</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Less world</h3>
+                <ul>
+                    <li class="fragment">Serverless</li>
+                    <li class="fragment">Infrastructureless</li>
+                    <li class="fragment">Opsless</li>
+                    <li class="fragment">Securityless</li>
                 </ul>
             </section>
 
