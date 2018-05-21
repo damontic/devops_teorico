@@ -607,55 +607,99 @@ rm -rf "$STEAMROOT/"*
                 <h3>Dimensiones</h3>
                 <p class="fragment">Infraestructura <span class="white-font highlight-blue fragment">como código</span></p>
                 <p class="fragment">Configuración <span class="white-font highlight-blue fragment">como código</span></p>
-                <p class="fragment">Aplicaciones <span class="white-font fragment">como código</span></p>
+                <p class="fragment">Aplicaciones</p>
                 <p class="fragment">Datos <span class="white-font highlight-blue fragment">como código</span></p>
             </section>
 
             <section>
-                <h2>Administración de la Infraestructura</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>IaC</td>
+                            <td>CaC</td>
+                            <td>A</td>
+                            <td>DaC</td>
+                        </tr>
+                        <tr>
+                            <td>Versionar</td>
+                            <td><input type="checkbox" id="vi" onchange="actualizar_resultado()"></td>
+                            <td><input type="checkbox" id="vc" onchange="actualizar_resultado()"></td>
+                            <td><input type="checkbox" id="va" onchange="actualizar_resultado()"></td>
+                            <td><input type="checkbox" id="vd" onchange="actualizar_resultado()"></td>
+                        </tr>
+                        <tr>
+                            <td>Probar</td>
+                            <td><input type="checkbox" id="pi" onchange="actualizar_resultado()"></td>
+                            <td><input type="checkbox" id="pc" onchange="actualizar_resultado()"></td>
+                            <td><input type="checkbox" id="pa" onchange="actualizar_resultado()"></td>
+                            <td><input type="checkbox" id="pd" onchange="actualizar_resultado()"></td>
+                        </tr>
+                        <tr>
+                            <td>Asegurar</td>
+                            <td><input type="checkbox" id="ai" onchange="actualizar_resultado()"></td>
+                            <td><input type="checkbox" id="ac" onchange="actualizar_resultado()"></td>
+                            <td><input type="checkbox" id="aa" onchange="actualizar_resultado()"></td>
+                            <td><input type="checkbox" id="ad" onchange="actualizar_resultado()"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <label id="resultado">0</label>
+                <label id="perfect" style="visibility: hidden">Perfect!</label>
+                <script type="text/javascript">
+                    function actualizar_resultado(){
+                        var elem_names = ["vi","vc","va","vd","pi","pc","pa","pd","ai","ac","aa","ad"];
+                        var result = 0;
+                        for(index in elem_names){
+                            if(document.getElementById(elem_names[index]).checked === true){
+                                result = result + 1;
+                            }
+                        }
+                        document.getElementById("resultado").textContent = result;
+                        if(result == 12){
+                            document.getElementById("perfect").style["visibility"] = "inherit";
+                        } else {
+                            document.getElementById("perfect").style["visibility"] = "hidden";
+                        }
+                    }
+                </script>
             </section>
 
             <section>
                 <h3>Infraestructura como Código</h3>
-                <img src="images/dim_terraform.svg" class="no-border" width="100px">
-                <img src="images/dim_cloudformation.png" class="no-border" width="100px">
-                <img src="images/dim_azure_rm.png" class="no-border" width="100px">
-                <img src="images/dim_google_dm.png" class="no-border" width="100px">
-                <img src="images/dim_xen.svg.png" class="no-border" width="100px">
+                <img src="images/dim_terraform.svg" class="no-border fragment" width="100px">
+                <img src="images/dim_cloudformation.png" class="no-border fragment" width="100px">
+                <img src="images/dim_azure_rm.png" class="no-border fragment" width="100px">
+                <img src="images/dim_google_dm.png" class="no-border fragment" width="100px">
+                <img src="images/dim_xen.svg.png" class="no-border fragment" width="100px">
             </section>
 
             <section>
                 <h3>Configuración como Código</h3>
-                <img src="images/dim_ansible.png" class="no-border" width="100px">
-                <img src="images/dim_chef.jpg" class="no-border" width="200px">
-                <img src="images/dim_puppet.png" class="no-border" width="100px">
-                <img src="images/dim_saltstack.png" class="no-border" width="200px">
-                <img src="images/dim_xen.svg.png" class="no-border" width="100px">
+                <img src="images/dim_ansible.png" class="no-border fragment" width="100px">
+                <img src="images/dim_chef.jpg" class="no-border fragment" width="200px">
+                <img src="images/dim_puppet.png" class="no-border fragment" width="100px">
+                <img src="images/dim_saltstack.png" class="no-border fragment" width="200px">
             </section>
 
             <section>
                 <h3>Datos como Código</h3>
-                <img src="images/dim_liquibase.png" class="no-border" width="100px">
-                <img src="images/dim_flyway.png" class="no-border" width="200px">
-            </section>
-
-            <section>
-                <h3>Datos como Código</h3>
-                <table>
-                    <tbody>
-                        <tr><td>DEV</td><td>Developers</td></tr>
-                        <tr><td>BUILD</td><td>Build Engineer</td></tr>
-                        <tr><td>QA</td><td>QA Team</td></tr>
-                        <tr><td>SIT</td><td>Integration Testers</td></tr>
-                        <tr><td>UAT</td><td>User Test</td></tr>
-                        <tr><td>PROD</td><td>Operations</td></tr>
-                    </tbody>
-                </table>
+                <img src="images/dim_liquibase.png" class="no-border fragment" width="100px">
+                <img src="images/dim_flyway.png" class="no-border fragment" width="200px">
             </section>
 
             <section>
                 <h3>Aplicaciones</h3>
-                <p>Manejo del proceso de despliegue</p>
+                <table>
+                    <tbody>
+                        <tr class="fragment"><td>DEV</td><td>Developers</td></tr>
+                        <tr class="fragment"><td>BUILD</td><td>Build Engineer</td></tr>
+                        <tr class="fragment"><td>QA</td><td>QA Team</td></tr>
+                        <tr class="fragment"><td>SIT</td><td>Integration Testers</td></tr>
+                        <tr class="fragment"><td>UAT</td><td>User Test</td></tr>
+                        <tr class="fragment"><td>PROD</td><td>Operations</td></tr>
+                    </tbody>
+                </table>
             </section>
 
         </section>
