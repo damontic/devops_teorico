@@ -145,65 +145,37 @@
                     <tbody>
                     <p><center><img src="images/iac/phoenix_vs_snowflakes.png" class="no-border" width="65%"></center></p>
                     <tr>
-                        <td style="font-size: 0.7em;"><i>"You name them and when they get sick, you nurse them back to health"</i></td>
-                        <td style="font-size: 0.7em;"><i>"You number them, and when they get sick you shoot them and get another one."</i></td>
+                        <td style="font-size: 0.7em;"><i>"The result is a unique snowflake: good for a ski resort, bad for a data center."</i></td>
+                        <td style="font-size: 0.7em;"><i>"A server should be like a phoenix, regularly rising out of the ashes."</i></td>
                     </tr>
                     </tbody>
                 </table>
             </section>
 
-            <!--Fénix vs. Copo de Nieve - diferencias-->
+            <!--Fénix vs. Copo de Nieve - Copo-->
             <section>
-                <h3>Fénix vs. Copo de Nieve</h3>
-                <center><table>
-                    <tbody>
-                    <p><center><img src="images/iac/phoenix_vs_snowflakes.png" class="no-border" width="65%"></center></p>
-                    <tr>
-                        <td style="font-size: 0.7em;">Nombres como miservidor.querido.com</td>
-                        <td style="font-size: 0.7em;">Nombres como servidor1520.dominio.com</td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 0.7em;">Amorosamente creados a mano. Únicos e indispensables.</td>
-                        <td style="font-size: 0.7em;">Iguales a cualquier otro servidor. Reemplazables.</td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 0.7em;">Días/semanas en crearse. Puede requerir proyectos de migración para recrearse en otro lado</td>
-                        <td style="font-size: 0.7em;">Se crean, modifican, destruyen y recrean en minutos a partir de scripts.</td>
-                    </tr>
-                    </tbody>
-                </table></center>
+                <h3>Servidores Copo de Nieve</h3>
+                <p><center></center></p>
+                <p>
+                    <img src="images/iac/snowflake.png" class="no-border" width="15%">
+                <ul>
+                    <li style="font-size: 0.8em;"><b>Son únicos:</b> Han sido altamente modificados de su estado actual. Por esto su estado es difícil de reproducir</li>
+                    <li style="font-size: 0.8em;"><b>Son fŕagiles:</b> Cualquier cambio puede llevar a errores. Cualquier intento de arreglar esos errores lleva a más errores</li>
+                    <li style="font-size: 0.8em;"><b>Son bellos:</b> Hasta que debemos que cambiarlos nuevamente.</li>
+                </ul></p>
             </section>
 
-            <!--Fénix vs. Copo de Nieve - diferencias-->
+            <!--Fénix vs. Copo de Nieve - Fénix-->
             <section>
-                <h3>Fénix vs. Copo de Nieve</h3>
-                <center><table>
-                    <tbody>
-                    <p><center><img src="images/iac/phoenix_vs_snowflakes.png" class="no-border" width="65%"></center></p>
-                    <tr>
-                        <td style="font-size: 0.7em;">Se modifican sólo en ventanas de mantenimiento y por personas con privilegios especiales</td>
-                        <td style="font-size: 0.7em;">Se modifican en cualquier momento mediante scripts que no requieren privilegios.</td>
-                    </tr>
-                    </tbody>
-                </table></center>
-            </section>
-
-            <!--Fénix vs. Copo de Nieve - diferencias-->
-            <section>
-                <h3>Fénix vs. Copo de Nieve</h3>
-                <center><table>
-                    <tbody>
-                    <p><center><img src="images/iac/phoenix_vs_snowflakes.png" class="no-border" width="65%"></center></p>
-                    <tr>
-                        <td style="font-size: 0.7em;">Varios requipos involucrados en aprovisionar un solo ambiente.</td>
-                        <td style="font-size: 0.7em;">Un solo click cubre varios niveles (computación, redes, almancentamiento, otros)</td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 0.7em;">Es estática, requiere excederse en la capacidad planeada para soportar picos </td>
-                        <td style="font-size: 0.7em;">La infraestructura es elástica y escala de manera automática durante picos.</td>
-                    </tr>
-                    </tbody>
-                </table></center>
+                <h3>Servidores Fénix</h3>
+                <p><img src="images/iac/phoenix.png" class="no-border" width="20%"></p>
+                <p style="font-size: 0.8em;"><b>Se consumen hasta las cenizas y reviven de la nada.</b></p>
+                <ul>
+                    <li style="font-size: 0.7em;">Instanciados desde cero.</li>
+                    <li style="font-size: 0.7em;">Su instanciación está definida de forma automática siguiendo una "receta".</li>
+                    <li style="font-size: 0.7em;">No importa cuántas veces optemos por destruirlos, siempre podremos recrearlos.</li>
+                    <li style="font-size: 0.7em;">Los cambios de estos servidores se encuentran versionados.</li>
+                </ul></p>
             </section>
 
             <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
@@ -213,254 +185,6 @@
 
             <!--AFTER THIS-->
 
-        </section>
-
-        <!--Dimensiones del Software-->
-        <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-
-            <section>
-                <img style="float: left" class="no-border" width="6%" src="images/rombo.svg"/>
-                <h1>Dimensiones del Software</h1>
-            </section>
-
-            <section>
-                <h3>Dimensiones</h3>
-                <p>Infraestructura <span class="white-font fragment highlight-blue">como código</span></p>
-                <p>Configuración <span class="white-font fragment highlight-blue">como código</span></p>
-                <p>Aplicaciones <span class="white-font">como código</span></p>
-                <p>Datos <span class="white-font fragment highlight-blue">como código</span></p>
-            </section>
-            <section>
-                <h3>Mecanismos Administración</h3>
-                <p>Versionamiento</p>
-                <p>Análisis estático</p>
-                <p>Pruebas</p>
-                <p>Auditoria de Seguridad</p>
-            </section>
-            <section>
-                <h2>Administración de la Infraestructura</h2>
-            </section>
-            <section>
-                <h3>Infraestructura como Código</h3>
-                <img src="images/dim_terraform.svg" class="no-border" width="100px">
-                <img src="images/dim_cloudformation.png" class="no-border" width="100px">
-                <img src="images/dim_azure_rm.png" class="no-border" width="100px">
-                <img src="images/dim_google_dm.png" class="no-border" width="100px">
-                <img src="images/dim_xen.svg.png" class="no-border" width="100px">
-            </section>
-            <section>
-                Crear y manejar
-                Hardware
-                Networking
-                Middleware
-                External Services
-
-                Environment: Hardware conf of servers: CPU, Memory, NIC. Network infrastructure.
-
-                All environments and services that support them: DNS, firewalls, routers, version control repositories
-                storage, monitoring applications, mail servers.
-
-
-            </section>
-            <section>
-                <h3>Beneficios</h3>
-                Respuesta rápida a cambio de requerimientos
-                Consolidado
-                Hardware estandarizado
-            </section>
-
-            <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-                <h1>Taller Infraestructura como Código</h1>
-                    <aside class="notes">
-                        Terraform:
-                        Construir 1 máquina jenkins con acceso por ssh
-                        Construir 2 máquinas servidor con acceso ssh: Producción, Integración
-                        Construir 1 balanceador que se conecte con Producción
-                    </aside>
-            </section>
-            <section>
-                <ol>
-                    <li>Instalar <a href="https://www.terraform.io/downloads.html">Terraform</a></li>
-                    <li>Leer <a href="https://www.terraform.io/intro/index.html">Introducción</a> a Terraform</li>
-                    <li>Instalar <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest">Azure Cli</a></li>
-                    <li>Leer <a href="https://www.terraform.io/intro/getting-started/build.html">Tutorial Construcción</a></li>
-                    <li>Crear una maquina virtual en azure: <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure">ejemplo</a>
-                    </li>
-                </ol>
-                <aside class="notes">
-                    https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure
-                    https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest
-                </aside>
-            </section>
-            <section>
-                <p>Crear:</p>
-                <ul>
-                    <li>2 máquinas Servidor (Producción, Integración)</li>
-                    <li>1 máquina Jenkins</li>
-                    <li>1 Balanceador conectado a máquina Producción</li>
-                </ul>
-                <p>Probar:</p>
-                <ul>
-                    <li>Ssh a Jenkins</li>
-                    <li>Ssh a Servidores</li>
-                    <li>Ssh de Jenkins a Servidor</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Administración de la Configuración</h2>
-            </section>
-
-            <section>
-                <h3>Configuración como Código</h3>
-                <img src="images/dim_ansible.png" class="no-border" width="100px">
-                <img src="images/dim_chef.jpg" class="no-border" width="200px">
-                <img src="images/dim_puppet.png" class="no-border" width="100px">
-                <img src="images/dim_saltstack.png" class="no-border" width="200px">
-                <img src="images/dim_xen.svg.png" class="no-border" width="100px">
-            </section>
-            <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-                <h1>Taller Configuración como Código</h1>
-                <aside class="notes">
-                    Ansible:
-                    Script instalación ansible máquina local
-                    Instalar Jenkins
-                    Crear Job Jenkins con jenkins file
-                    Instalar Ngnix
-                </aside>
-            </section>
-            <section>
-                <h2>Administración del Código</h2>
-            </section>
-            <section>
-                <h2>Administración de los Datos</h2>
-            </section>
-            <section>
-                <h3>Datos como Código</h3>
-                <img src="images/dim_liquibase.png" class="no-border" width="100px">
-                <img src="images/dim_flyway.png" class="no-border" width="200px">
-            </section>
-            <section>
-                <p>Integración Continua </p>
-                <p>Pipeline de Software</p>
-                <p>Manejo del proceso de despliegue</p>
-            </section>
-            <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-                <h1>Taller Pipeline</h1>
-                <aside class="notes">
-                    Obtiene código
-                    Coloca archivo de imagen dependiendo del ambiente
-                    Corre pruebas (no tenga groserías)
-                    Despliega (copia carpeta a ngnix)
-                </aside>
-            </section>
-        </section>
-
-        <!--Mejora Continua y Operación-->
-        <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-
-            <section>
-                <img style="float: left" class="no-border" width="7%" src="images/rombo.svg"/>
-                <h1 style="float: left">Mejora Continua y Operación</h1>
-            </section>
-
-            <section>
-                <p>Monitoreo</p>
-                <p>Retroalimentación</p>
-                <p>Aprendizaje Continuo y Experimentación</p>
-                <p>Seguridad Informática</p>
-            </section>
-            <section>
-                <h3>Monitoreo</h3>
-            </section>
-            <section>
-                <ul>
-                    <li>Alerts</li>
-                    <li>Tickets</li>
-                    <li>Logging</li>
-                </ul>
-            </section>
-            <section>
-                <h3>SRE - Site Reliability Engineering</h3>
-                <blockquote cite="https://landing.google.com/sre/book/chapters/introduction.html">
-                    &ldquo;SRE is what you get when you treat operations as if it’s a software problem&rdquo;Google SRE
-                </blockquote>
-                <aside class="notes">
-                    20 Minutos
-                </aside>
-            </section>
-            <section>
-                <h4>Aproximación normal</h4>
-                <p>Sysops</p>
-                <p>Desarrollo vs Operaciones</p>
-                <blockquote style="background: #b71930" class="white-font">
-                    &ldquo;Queremos desplegar lo que sea, cuando sea, sin impedimentos&rdquo;
-                </blockquote>
-                VS
-                <blockquote style="background: #b71930" class="white-font">
-                    &ldquo;No queremos cambiar nada una vez este funcionando el sistema&rdquo;
-                </blockquote>
-            </section>
-            <section>
-                <h4>Aproximación normal</h4>
-                <img class="no-border" src="images/intro_SRE_lineal.svg">
-                <p>Un equipo tradicional de operaciones escala linealmente con el tamaño del servicio.</p>
-                <aside class="notes">
-                    Lo que implica contratar más personas para hacer las mismas tareas una y otra vez.
-                    La intervención manual para cambios y manejo de eventos se vuelve más costosa a medida que crece el servicio.
-                </aside>
-            </section>
-            <section>
-                <h4>Aproximación SRE</h4>
-                <p>Uso del tiempo:</p>
-                <div class="pie" style="margin: 0 auto;"><p style="padding-top: 110px">Dev Ops</p></div>
-                <p class="fragment">Alta dependencia de automatización vs esfuerzo humano.</p>
-            </section>
-            <section>
-                <img class="no-border" src="images/intro_SRE_sublineal.svg">
-                <p>Un equipo SRE escala de forma sublineal</p>
-            </section>
-            <section>
-                Se puede ver a SRE como una implementación especifica de DevOps con algunas extensiones
-            </section>
-            <section>
-                <h4>Principios SRE</h4>
-                <ul>
-                    <li class="fragment current-visible">Enfoque constante en Ingeniería (Blame-free)</li>
-                    <li class="fragment current-visible">Búsqueda de velocidad de cambio sin violar el SLO (Error Budget)</li>
-                    <li class="fragment current-visible">Monitoreo (Alarmas accionables)</li>
-                    <li class="fragment current-visible">Respuesta a Emergencias (Latencia Humana)</li>
-                    <li class="fragment current-visible">Manejo de Cambios</li>
-                    <li class="fragment current-visible">Previsión de demanda y capacidad</li>
-                    <li class="fragment current-visible">Aprovisionamiento</li>
-                    <li class="fragment current-visible">Eficiencia y Rendimiento</li>
-                </ul>
-                <aside class="notes">
-                    Tenets of SRE:
-                    Ensuring a Durable Focus on Engineering
-                    Blame-free postmortem culture
-                    Ops 50% Eng 50%
-                    Pursuing Maximum Change Velocity Without Violating a Service’s SLO
-                    100% wrong reliability target
-                    Error Budget, spend to get velocity
-                    Monitoring
-                    Health y availability
-                    A system that requires a human to read an email and decide whether or not some type of action needs to be taken in response is fundamentally
-                    flawed
-                    Instead, software should do the interpreting, and humans should be notified only when they need to take action.
-                    Emergency Response
-                    Mean time to failure (MTTF)
-                    Mean time to repair (MTTR)
-                    Humans add latency
-                    Recording best practices ahead of time in a playbook produces 3x imporvement in MTTR
-                    Change Management
-                    Progressive Rollouts
-                    Quickly and accurately detecting problems
-                    Rollback changes safely
-                    Demand Forecasting and Capacity Planning
-                    Provisioning
-                    Efficiency and Performance
-                </aside>
-            </section>
         </section>
 
         <!--Que gracias-->
