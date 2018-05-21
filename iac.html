@@ -26,337 +26,193 @@
 <div id="bottom"></div>
 <div class="reveal">
     <div class="slides">
+
+        <!--Main Title-->
         <section data-background="url('images/logo_esquina_intro_end.svg'), linear-gradient(to right, #443548, #b71930, #e94635)"
                  data-background-position="right bottom" data-background-repeat="no-repeat">
             <img class="no-border" width="5%" src="images/rombo.svg"/>
             <img class="no-border" width="13%" src="images/s4n.svg"/>
             <h1 class="white-font">Devops</h1>
             <blockquote class="white-font" cite="https://landing.google.com/sre/book/chapters/introduction.html">
-                &ldquo;Hope is not a strategy.&rdquo;
+                &ldquo;Buscar un  quote?&rdquo;
             </blockquote>
         </section>
 
-        <!--Devops-->
+        <!--Contenido-->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
-            <section>
-                <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
-                <h1>Devops</h1>
-            </section>
-
-            <section>
-                <h2>Problemas comunes</h2>
+           <section>
+                <h2>Contenido</h2>
                 <ul>
-                    <li class="fragment">Despliegue de Software manual</li>
-                    <li class="fragment">Desplegar a un ambiente Productivo por primera vez solamente cuando se termina el Desarrollo</li>
-                    <li class="fragment">Configuración manual de ambientes, incluyendo Producción</li>
-                    <li class="fragment">Falta de Visibilidad de Problemas: Monitoreo</li>
-                    <li class="fragment">Inseguridad</li>
+                    <li> Conceptos</li>
+                    <li> Infraestructura como Código</li>
+                    <li> Ejercicio</li>
                 </ul>
-            </section>
-
-            <section data-background="url('images/elephant.png')" data-background-size="20%" data-background-repeat="no-repeat"
-                     data-background-position="90% 65%">
-                <h2>¿Qué es DevOps?</h2>
-                <ul>
-                    <li class="fragment">¿Es un rol?</li>
-                    <li class="fragment">¿Es un equipo aparte?</li>
-                    <li class="fragment">¿Es una tecnología o herramienta?</li>
-                    <li class="fragment">¿Es combinar Desarrollo y Operaciones?</li>
-                    <li class="fragment">¿Es automatización de todo?</li>
-                    <li class="fragment">¿Es una estrategia que se puede aplicar siempre?</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>DevOps</h2>
-                <img src="images/devops.svg" width="50%" height="50%"/>
-            </section>
-
-            <section>
-                <h3>Flujo de Valor</h3>
-                <img src="images/value-stream.png"/>
-                <aside class="notes">
-                    <ul>
-                        <li>Agilidad</li>
-                        <ul>
-                            <li>Reducir dramáticamente los tiempos desde la concepción de una idea hasta su puesta en producción</li>
-                        </ul>
-                        <li>Productividad</li>
-                        <ul>
-                            <li>Reducir dramáticamente los tiempos desde la concepción de una idea hasta su puesta en producción</li>
-                        </ul>
-                        <li>Innovación</li>
-                        <ul>
-                            <li>Reducir dramáticamente los tiempos desde la concepción de una idea hasta su puesta en producción</li>
-                        </ul>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2> Valores DevOps</h2>
-                <img src="images/devops_cams.png" width="60%" cite="http://talesmorais.com/2016/all-devops-culture-is-about-cams/"/>
-
-                <aside class="notes">
-                    What is culture? Culture's a lot more than ping pong tables in the office, or free food in the company cafeteria. Culture is driven by
-                    behavior.
-                    Changing these underlying behaviors and assumptions is how you can drive change in your company's culture.
-                    “You can’t directly change culture. But you can change behavior, and behavior becomes culture”
-                    DevOps is not just about automated tooling.
-                    "people over process over tools".
-                    You really want to make sure you prioritize Automation as your primary approach to the problem.
-                    That stands for 'Measurement'. One of the keys to a rational approach to our systems is the ability for us to measure them. Metrics, they
-                    tell you what's happening and whether the changes that we've made have improved anything.
-                    Look for things like MTTR, the mean time to recovery, or Cycle Time. Look for costs, revenue, even something like employee satisfaction. All
-                    of these are part of generating a holistic insight across your system. These metrics help engage the team in the overall goal.
-                    Sharing ideas and problems is the heart of collaboration. And it's also really at the heart of DevOps. In DevOps, expect to see a high
-                    premium placed on openness and transparency.
-                </aside>
             </section>
 
         </section>
 
         <!--Conceptos-->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+
+            <!--Title-->
             <section>
                 <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
-                <h1>Conceptos</h1>
-            </section>
-            <section>
-                <h3>Desarrollo Ágil</h3>
-            </section>
-            <section>
-                <h3>Antipatrones de Manejo de Software (CD)</h3>
-            </section>
-            <section>
-                <h3> CI/CD/CD</h3>
-                <img src="images/ci_cd_cd.png" width="80%"/>
-            </section>
-            <section>
-                <h2>Pipeline de Software (CD)</h2>
-            </section>
-            <section>
-                <h2>Retroalimentación (CD)</h2>
-            </section>
-            <section>
-                <h2>Aprendizaje Continuo y Experimentación</h2>
-                Kaizen
-                <img src="images/devops_kaizen.png" class="no-border" width="10%"/>
-                <img src="images/devops_muda_mura_muri.png" class="no-border" width="50%"/>
-
-            </section>
-            <section>
-                <h2>Aprendizaje Continuo y Experimentación</h2>
-                Ciclo de Deming
-                <img src="images/devops_ciclo_deming.png" class="no-border" width="50%"/>
-
-                <aside class="notes">
-                    Muri: Excess
-                    Mura: Uneveness Disparidad
-                    Muda: Waste
-                    Image from: https://hackernoon.com/the-muri-of-a-bad-on-call-system-6d059f715f32
-                    Cultura de aprendizaje continuo y experimentación
-                    - Leadership
-                    Mistakes are punished (Blameless postmortems) Ejemplo gitlab y amazon
-                    Suggestions or problems are viewed as whistle blowers and troublemakers
-                    - Experiments encouraged
-                    Enabled by standardization of procedures and documentation of results
-                    - We are all lifelong learners who must take risks in our daily work.
-                    Apply scientific approach to process improvement and product development
-                    Learn from successes and failures!
-                    Local learnings are turned intro global improvements!
-                    "Even more important than daily work is the improvement of daily work"
-                    In the absence of improvements processes degrade over time.
-                    Schedule time to improve: Kaizen blitzes
-                    From: Devops Handbook
-                </aside>
-            </section>
-            <section>
-                <h2>Aprendizaje Continuo y Experimentación</h2>
-                Blameless postmortems:
-                <a href="https://aws.amazon.com/message/41926/">
-                    <img src="images/devops_aws_s3.png" class="no-border" width="10%"/>
-                </a>
-                <a href="https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/">
-                    <img src="images/devops_gitlab.png" class="no-border" width="10%"/>
-                </a>
-
-                <aside class="notes">
-                    Cuando git lab se cayo por un día completo y perdieron 6 horas de datos,
-                    la culpa no fue de quien corrió el comando para borrar el cache.
-                    Fue del proceso que le permitió correr el comando estando cansado sin estar consiente que estaba en producción.
-                    Agregaron indicadores claros para tener presente que se esta en un servidor de producción
-                    Cuando S3 se cayo por que se corrió un comando de reinicio que aplico a mas máquinas del cluster de las esperadas, se corrigió el comando
-                    para que no permita reiniciar más maquinas de las que desestabilizan el cluster.
-            </section>
-            <section>
-                <h2>Arquitectura de Sistemas (Release It)</h2>
-            </section>
-            <section>
-                <h3>Reactive Manifestó</h3>
-                <img src="images/devops_reactive.svg" width="80%"/>
-                <p class="fragment">Los sistemas grandes están compuestos de sistemas más pequeños y dependen de las propiedades reactivas de estos.</p>
-                <aside class="notes">
-                    <ul>
-                        <li>
-                            Responsiveness: is the cornerstone of usability and utility
-                            it means that problems may be detected quickly
-                            Rapid, consistent, response times, with reliable upper bounds.
-                            This simplifies error handling, builds confidence and encourages further interaction.
-                        </li>
-                        <li>
-                            Resilient: Systems stay responsive in face of failure.
-                            Replication, containment, isolation and delegation.
-                            Recovery is delegated to another (external component)
-                        </li>
-                        <li>
-                            Elastic: System responds under varying workload
-                            Increase or decrease allocated resources
-                            No bottlenecks
-                        </li>
-                        <li>
-                            Message Driven: Asynchronous message passing
-                            Delegate failures as messages.
-                            Back-pressure (components must tell when under stress)
-                            Non-blocking communication
-                        </li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h3><a href="https://12factor.net/">12 Factor app</a></h3>
-                <p>I. Codebase</p>
-                <p class="fragment current-visible">One codebase in revision control, many deploys</p>
-                <p>II. Dependencies</p>
-                <p class="fragment current-visible">Explicitly declare and isolate dependencies</p>
-                <p>III. Config</p>
-                <p class="fragment current-visible">Store config in the environment</p>
-                <p>IV. Backing services</p>
-                <p class="fragment current-visible">Treat backing services as attached resources</p>
-                <aside class="notes">
-                    I: Code
-                    <ul>
-                        <li>All deploys from single code base (many code bases are many apps and each must have 12 factor)</li>
-                        <li>Deploy is running instance of app</li>
-                        <li>One to one between app and codebase</li>
-                    </ul>
-                    II: Dependencies
-                    <ul>
-                        <li>Never relies on implicit existence of system-wide packages</li>
-                        <li>Dependency declaration and isolation must always be used together (dependency declaration manifest, dependency isolation tool)</li>
-                        <li>Dont "shell out" to system tools</li>
-                    </ul>
-                    III: Config
-                    <ul>
-                        <li>Whatever varies between deploys</li>
-                        <li>Litmus Test: Can code base be made public without compromising credentials?</li>
-                        <li>Env variables: independent and not grouped</li>
-                    </ul>
-                    IV: Backing Services
-                    <ul>
-                        <li>Backing service is any service the app consumes over the network.</li>
-                        <li>Makes no distinction between local and third party service.</li>
-                        <li>Every service is a resource that can be attached or detached at will(no code changes)</li>
-                    </ul>
-
-                </aside>
-            </section>
-            <section>
-                <h3><a href="https://12factor.net/">12 Factor app</a></h3>
-                <p>V. Build, release, run</p>
-                <p class="fragment current-visible">Strictly separate build and run stages</p>
-                <p>VI. Processes</p>
-                <p class="fragment current-visible">Execute the app as one or more stateless processes</p>
-                <p>VII. Port binding</p>
-                <p class="fragment current-visible">Export services via port binding</p>
-                <p>VIII. Concurrency</p>
-                <p class="fragment current-visible">Scale out via the process model</p>
-                <aside class="notes">
-                    V: Build, release, run
-                    <ul>
-                        <li>Build Stage: transform code to executable(build)</li>
-                        <li>Release Stage:Take build and combine with deploy config(release)</li>
-                        <li>Run Stage:Runs app in execution environment</li>
-                        <li>Every release unique ID</li>
-                    </ul>
-                    VI: Processes
-                    <ul>
-                        <li>Each app as one or more processes</li>
-                        <li>Stateless: don't carry state between transactions</li>
-                        <li>Persistence is done through a backing service</li>
-                        <li>Stiky sessions violate 12 factor</li>
-                    </ul>
-                    VII: Port binding
-                    <ul>
-                        <li>Self-contained(no runtime injection into system web server)</li>
-                        <li>All processing occurs in user space</li>
-                        <li>One app can become backing service for another app.</li>
-                    </ul>
-                    VIII: Concurrency
-                    <ul>
-                        <li>Scaly horizontally by spawning more app processes</li>
-                        <li>App Should never daemonize (Rely on Os system process manager)</li>
-
-                    </ul>
-
-                </aside>
-            </section>
-            <section>
-                <h3><a href="https://12factor.net/">12 Factor app</a></h3>
-                <p>IX. Disposability</p>
-                <p class="fragment current-visible">Maximize robustness: fast startup and graceful shutdown</p>
-                <p>X. Dev/prod parity</p>
-                <p class="fragment current-visible">Keep "environments" as similar as possible</p>
-                <p>XI. Logs</p>
-                <p class="fragment current-visible">Treat logs as event streams</p>
-                <p>XII. Admin processes</p>
-                <p class="fragment current-visible">Run admin/management tasks as one-off processes</p>
-                <aside class="notes">
-                    IX: Disposability
-                    <ul>
-                        <li>Processes can be started or stopped at any time</li>
-                        <li>Fast startup</li>
-                        <li>Shutdown gracefully with SIGTERM</li>
-                        <li>Robust against sudden death (hardware failure)</li>
-                    </ul>
-                    X: Dev/prod parity
-                    <ul>
-                        <li>Reduce dev and prod gaps:</li>
-                        <li>Time gap: write code and deploy it hours or minutes later</li>
-                        <li>Personnel gap: Devs who wrote code are involved in deploying it and watching it in prod</li>
-                        <li>Tools gap: development and production as similar as possible(also dbs)</li>
-                    </ul>
-                    XI: Logs
-                    <ul>
-                        <li>App never concerns itself with routing or storage of output stream (STDOUT)</li>
-                        <li>Log files configured by execution environment</li>
-                        <li>Capture and analyze logs (splunk,Haddop ..) (Find events, graph trends, active alerting)</li>
-                    </ul>
-                    XII: Admin processes
-                    <ul>
-                        <li>Admin code must ship with application code to avoid sync issues</li>
-                        <li>Admin processes should be standalone</li>
-                        <li>Run admin scripts with same environment as app (REPL)</li>
-                    </ul>
-
-                </aside>
-            </section>
-            <section>
-                <h2>Ganado vs Mascotas</h2>
-                <img src="images/devops_pets_cattle.png" class="no-border" width="50%">
-                <p class="fragment">
-                    <img src="images/devops_fenix.png" class="no-border" width="10%" style="float: left">
-                    Servidores Fénix vs Copo de nieve
-                    <img src="images/devops_snowflake.png" class="no-border" width="10%" style="float: right">
-                </p>
+                <h1 style="font-size: 2.0em;">Conceptos</h1>
             </section>
 
+            <!--Quote-->
+            <section>
+                <h4>
+                    <blockquote>
+                        &ldquo;Every developer or support person dreads a moment like this when they have to reconfigure the servers, because of the different aspects involved in the seemingly tedious process. But it doesn't always have be to like this.&rdquo;
+                    </blockquote>
+                </h4>
+            </section>
+
+            <!--Ganado vs Mascotas - frases-->
+            <section>
+                <h3>Ganado vs Mascotas</h3>
+                <table>
+                    <tbody>
+                    <p><center><img src="images/iac/pets_vs_cattle.png" class="no-border" width="65%"></center></p>
+                    <tr>
+                        <td style="font-size: 0.7em;"><i>"You name them and when they get sick, you nurse them back to health"</i></td>
+                        <td style="font-size: 0.7em;"><i>"You number them, and when they get sick you shoot them and get another one."</i></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!--Ganado vs Mascotas - diferencias-->
+            <section>
+                <h3>Ganado vs Mascotas</h3>
+                <center><table>
+                    <tbody>
+                    <p><center><img src="images/iac/pets_vs_cattle.png" class="no-border" width="65%"></center></p>
+                    <tr>
+                        <td style="font-size: 0.7em;">Nombres como miservidor.querido.com</td>
+                        <td style="font-size: 0.7em;">Nombres como servidor1520.dominio.com</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 0.7em;">Amorosamente creados a mano. Únicos e indispensables.</td>
+                        <td style="font-size: 0.7em;">Iguales a cualquier otro servidor. Reemplazables.</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 0.7em;">Días/semanas en crearse. Puede requerir proyectos de migración para recrearse en otro lado</td>
+                        <td style="font-size: 0.7em;">Se crean, modifican, destruyen y recrean en minutos a partir de scripts.</td>
+                    </tr>
+                    </tbody>
+                </table></center>
+            </section>
+
+            <!--Ganado vs Mascotas - diferencias-->
+            <section>
+                <h3>Ganado vs Mascotas</h3>
+                <center><table>
+                    <tbody>
+                    <p><center><img src="images/iac/pets_vs_cattle.png" class="no-border" width="65%"></center></p>
+                    <tr>
+                        <td style="font-size: 0.7em;">Se modifican sólo en ventanas de mantenimiento y por personas con privilegios especiales</td>
+                        <td style="font-size: 0.7em;">Se modifican en cualquier momento mediante scripts que no requieren privilegios.</td>
+                    </tr>
+                    </tbody>
+                </table></center>
+            </section>
+
+            <!--Ganado vs Mascotas - diferencias-->
+            <section>
+                <h3>Ganado vs Mascotas</h3>
+                <center><table>
+                    <tbody>
+                    <p><center><img src="images/iac/pets_vs_cattle.png" class="no-border" width="65%"></center></p>
+                    <tr>
+                        <td style="font-size: 0.7em;">Varios requipos involucrados en aprovisionar un solo ambiente.</td>
+                        <td style="font-size: 0.7em;">Un solo click cubre varios niveles (computación, redes, almancentamiento, otros)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 0.7em;">Es estática, requiere excederse en la capacidad planeada para soportar picos </td>
+                        <td style="font-size: 0.7em;">La infraestructura es elástica y escala de manera automática durante picos.</td>
+                    </tr>
+                    </tbody>
+                </table></center>
+            </section>
+
+            <!--Fénix vs. Copo de Nieve - frases-->
+            <section>
+                <h3>Fénix vs. Copo de Nieve</h3>
+                <table>
+                    <tbody>
+                    <p><center><img src="images/iac/phoenix_vs_snowflakes.png" class="no-border" width="65%"></center></p>
+                    <tr>
+                        <td style="font-size: 0.7em;"><i>"You name them and when they get sick, you nurse them back to health"</i></td>
+                        <td style="font-size: 0.7em;"><i>"You number them, and when they get sick you shoot them and get another one."</i></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!--Fénix vs. Copo de Nieve - diferencias-->
+            <section>
+                <h3>Fénix vs. Copo de Nieve</h3>
+                <center><table>
+                    <tbody>
+                    <p><center><img src="images/iac/phoenix_vs_snowflakes.png" class="no-border" width="65%"></center></p>
+                    <tr>
+                        <td style="font-size: 0.7em;">Nombres como miservidor.querido.com</td>
+                        <td style="font-size: 0.7em;">Nombres como servidor1520.dominio.com</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 0.7em;">Amorosamente creados a mano. Únicos e indispensables.</td>
+                        <td style="font-size: 0.7em;">Iguales a cualquier otro servidor. Reemplazables.</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 0.7em;">Días/semanas en crearse. Puede requerir proyectos de migración para recrearse en otro lado</td>
+                        <td style="font-size: 0.7em;">Se crean, modifican, destruyen y recrean en minutos a partir de scripts.</td>
+                    </tr>
+                    </tbody>
+                </table></center>
+            </section>
+
+            <!--Fénix vs. Copo de Nieve - diferencias-->
+            <section>
+                <h3>Fénix vs. Copo de Nieve</h3>
+                <center><table>
+                    <tbody>
+                    <p><center><img src="images/iac/phoenix_vs_snowflakes.png" class="no-border" width="65%"></center></p>
+                    <tr>
+                        <td style="font-size: 0.7em;">Se modifican sólo en ventanas de mantenimiento y por personas con privilegios especiales</td>
+                        <td style="font-size: 0.7em;">Se modifican en cualquier momento mediante scripts que no requieren privilegios.</td>
+                    </tr>
+                    </tbody>
+                </table></center>
+            </section>
+
+            <!--Fénix vs. Copo de Nieve - diferencias-->
+            <section>
+                <h3>Fénix vs. Copo de Nieve</h3>
+                <center><table>
+                    <tbody>
+                    <p><center><img src="images/iac/phoenix_vs_snowflakes.png" class="no-border" width="65%"></center></p>
+                    <tr>
+                        <td style="font-size: 0.7em;">Varios requipos involucrados en aprovisionar un solo ambiente.</td>
+                        <td style="font-size: 0.7em;">Un solo click cubre varios niveles (computación, redes, almancentamiento, otros)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 0.7em;">Es estática, requiere excederse en la capacidad planeada para soportar picos </td>
+                        <td style="font-size: 0.7em;">La infraestructura es elástica y escala de manera automática durante picos.</td>
+                    </tr>
+                    </tbody>
+                </table></center>
+            </section>
 
             <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
                 <h1>Ejercicio</h1>
                 En que diferimos? Como podríamos mejorarlo?
             </section>
+
+            <!--AFTER THIS-->
+
         </section>
 
         <!--Dimensiones del Software-->
@@ -414,7 +270,7 @@
             </section>
 
             <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
-                <h3>Taller Infraestructura como Código</h1>
+                <h1>Taller Infraestructura como Código</h1>
                     <aside class="notes">
                         Terraform:
                         Construir 1 máquina jenkins con acceso por ssh
@@ -612,6 +468,7 @@
                  data-background-position="right bottom" data-background-repeat="no-repeat">
             <h1 class="white-font">Muchas Gracias</h1>
         </section>
+
     </div>
 </div>
 <script src="lib/js/head.min.js"></script>
