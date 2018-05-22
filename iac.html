@@ -27,18 +27,12 @@
 <div class="reveal">
     <div class="slides">
 
-
-
         <!--Main Title-->
         <section data-background="url('images/logo_esquina_intro_end.svg'), linear-gradient(to right, #443548, #b71930, #e94635)"
                  data-background-position="right bottom" data-background-repeat="no-repeat">
             <img class="no-border" width="5%" src="images/rombo.svg"/>
             <img class="no-border" width="13%" src="images/s4n.svg"/>
             <h1 class="white-font">Devops</h1>
-            <!--<blockquote class="white-font" cite="https://landing.google.com/sre/book/chapters/introduction.html">-->
-                <!--&ldquo;Buscar un  quote?&rdquo;-->
-            <!--</blockquote>-->
-
         </section>
 
         <!--Quote-->
@@ -181,7 +175,77 @@
                 </ul></p>
             </section>
 
-            <!--AFTER THIS-->
+            <!--Infraestructura Inmutable-->
+            <section>
+                <h3>Infraestructura Inmutable</h3>
+                <p><img src="images/iac/immutable_definition.png" class="no-border" width="80%"></p>
+                <p class="fragment" style="font-size: 0.8em;"><b>La característica de ser inmutable aplica para
+                    objetos que una vez son creados no pueden ser modificados</b></p>
+            </section>
+
+            <!--Servidores Inmutables-->
+            <section>
+                <h3>Ciclo de Vida de Servidores Fénix</h3>
+                <p><img src="images/iac/PhoenixServerLifecycle.png" class="no-border" width="80%"></p>
+                <p class="fragment" style="font-size: 0.7em;">Destruir y recrear servidores constantemente nos llevan
+                    a un estado inicial conocido y versionado (pero no final)</p>
+                <aside class="notes">
+                    Estado completo de un servidor fénix: imagen base + configuración + datos
+                    Es más fácil aplicar las configuraciones a las imágenes base que a sistemas corriendo.
+                </aside>
+            </section>
+
+            <!--Servidores Inmutables-->
+            <section>
+                <h3>Servidores Inmutables</h3>
+                <blockquote cite="https://landing.google.com/sre/book/chapters/introduction.html">
+                    &ldquo;A server that once deployed, is never modified, merely replaced with a new updated instance&rdquo;
+                </blockquote>
+            </section>
+
+            <!--Servidores Inmutables-->
+            <section>
+                <h3>Ciclo de Vida de Servidores Inmutables</h3>
+                <p><img src="images/iac/ImmutableServerLifecycle.png" class="no-border" width="80%"></p>
+                <p style="font-size: 0.7em;">¿Qué pasa si creamos servidores configurados una sola vez?</p>
+            </section>
+
+            <!--Servidores Inmutables-->
+            <section>
+                <h3>Servidores Inmutables</h3>
+                <p>¿Ventajas?<ul>
+                <li class="fragment" style="font-size: 0.8em;">Mayor consistencia entre diferentes ambientes</li>
+                <li class="fragment" style="font-size: 0.8em;">Procesos de aprovisionamiento más confiables</li>
+                <li class="fragment" style="font-size: 0.8em;">Mayor velocidad en el aprovisionamiento de nuevos ambientes</li>
+                <li class="fragment" style="font-size: 0.8em;">Procesos de evolución de servidores más rápidos y manejables</li>
+            </ul></p>
+                <aside class="notes">
+                    <p>Saber qué tiene una máquina instalado, quitar o agregar paquetes es algo que se puede
+                    hacer todo el tiempo.</p>
+                    <p>Por ejemplo requiere menos pasos no instalar un paquete que que quitar un paquete de un servidor
+                        pero esto solo sucede cuando instalamos todo desde cero una vez</p>
+                </aside>
+            </section>
+
+            <!--Infraestructura Inmutable-->
+            <section>
+                <h3>Infraestructura Inmutable</h3>
+                <p><ul>
+                    <li class="fragment" style="font-size: 0.9em;">¿Podríamos/deberíamos tratar toda nuestra infraestructura como Inmutable?</li>
+                    <li class="fragment" style="font-size: 0.9em;">¿Qué desventajas o consideraciones existen en este caso?</li>
+                <p><ul>
+                <li class="fragment" style="font-size: 0.7em;">¿Qué pasa cuando tenemos datos no desechables en los servidores? (logs, bases de datos)</li>
+                <li class="fragment" style="font-size: 0.7em;">¿En qué medida se ven afectados los tiempos de despliegue si todo debe ser recreado cuando existen cambios?</li>
+            </ul></p></ul></p>
+            </section>
+
+            <!--Chaos Engineering-->
+            <section>
+                <h3>Chaos Engineering</h3>
+                <p><img src="images/iac/chaos_monkey.png" align="right" class="no-border" width="40%"></p>
+                <p style="font-size: 0.6em;"><i>"a tool that randomly disables our production instances to make sure we can survive this common type of failure without any customer impact"</i></p>
+                <p style="font-size: 0.6em;"><i>"...it has terminated over 65,000 instances running in our production and testing environments. Most of the time nobody notices, but we continue to find surprises caused by Chaos Monkey which allows us to isolate and resolve them so they don't happen again."</i></p>
+            </section>
 
         </section>
 
