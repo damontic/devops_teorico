@@ -251,6 +251,26 @@ $ flyway migrate
                 </ol>
             </section>
 
+            <section>
+                <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
+                <h1>Práctica Liquibase</h1>
+            </section>
+
+            <section>
+                <ol>
+                    <li class="fragment">Instalar Liquibase</li>
+                    <li class="fragment">Instalar SqlLite3</li>
+                    <li class="fragment">Crear Base de Datos</li>
+                    <pre class="stretch fragment"><code class="bash">
+$ sqlite3 banana_corp.sqlite
+                    </code></pre>
+                    <li class="fragment">Ejecutar Migración</li>
+                    <pre class="stretch fragment"><code class="bash">
+$ liquibase --driver=org.sqlite.JDBC --changeLogFile=db.changelog-master.xml --url="jdbc:sqlite:./banana_corp.sqlite" --classpath="drivers/sqlite-jdbc-3.20.1.jar" migrate
+                    </code></pre>
+                </ol>
+            </section>
+
         </section>
 
         <!--Referencias-->
