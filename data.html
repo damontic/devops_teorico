@@ -238,7 +238,16 @@
 
             <section>
                 <ol>
-                    <li>Instalar Flyway</li>
+                    <li class="fragment">Instalar Flyway</li>
+                    <li class="fragment">Instalar SqlLite3</li>
+                    <li class="fragment">Crear Base de Datos</li>
+                    <pre class="stretch fragment"><code class="bash">
+$ sqlite3 banana_corp.sqlite
+                    </code></pre>
+                    <li class="fragment">Ejecutar Migración</li>
+                    <pre class="stretch fragment"><code class="bash">
+$ flyway migrate
+                    </code></pre>
                 </ol>
             </section>
 
