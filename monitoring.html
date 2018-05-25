@@ -46,11 +46,12 @@
 
 <section>
 Monitoreo
-* Funcional
-    * Negocio
 
-* No Funcional
-    * Ambiente Interno
+    * Negocio
+        *
+
+
+    * Dentro de la Maquina
         * App
             * Throughput
             * MTTR (Mean Time To respond)
@@ -58,20 +59,20 @@ Monitoreo
         * OS
             * Resource Usage
             * Errors
-    * Ambiente Externo
+    * fuera de la Maquina
         * Red
         * Servicios usados
-        * Caja Negra
-            * Usuarios
-                * Origen
-                * Cantidad
-                * "Tipo"
-                    * Medio entrada(Navegador, Os, Referer ...)
-            * App (As user would see it)
-                * Latencia
-                * Disponibilidad
-                * Appdex
-                ...
+    * Caja Negra
+        * Usuarios
+            * Origen
+            * Cantidad
+            * "Tipo"
+            * Medio entrada(Navegador, Os, Referer ...)
+        * App (As user would see it)
+            * Latencia
+            * Disponibilidad
+            * Appdex
+            ...
 
 </section>
 
@@ -94,6 +95,40 @@ Resolution of measurements:
 Monitoring system should be simple
 * Rules should be simple
 * 
+
+</section>
+<section>
+    Utilization (Percentage, )
+    Saturation (Queue depth)
+    Errors (errors/s)
+    Rate (requests/s)
+    Latency (response time, queue/wait time)
+</section>
+
+<section>
+    <h1>Operacion</h1>
+    SLA, SLO, SLI
+    Monitoreo
+    Alarmas
+    Testing
+    Troubleshooting
+    Postmortems: blameless, learn from failure
+
+
+</section>
+<section>
+    Cascading failures
+    "If at first you don't succeed, back off exponentially."
+
+Dan Sandler, Google Software Engineer
+</section>
+
+<section>
+    Despliegues
+
+    Canary
+    A/B
+    Blue Green
 
 </section>
 
@@ -137,7 +172,7 @@ Problem Resolution Strategies(http://www.brendangregg.com/methodology.html):
         * USE (Usage Saturation Error)
             * List Resources
             * For every resource, check utilization, saturation, and errors.
-        * RED ()
+        * RED (Rate Errors Duration)
         * TSA
             For each thread measure time in each state, investigate from most to least frequent
         * Ad hoc checklist
@@ -181,6 +216,15 @@ Problem Resolution Strategies(http://www.brendangregg.com/methodology.html):
             Characterize workload
             Predict performance under different alternatives
             Select the lowest cost, highest performance alternative
+</section>
+<section>
+    Resumen:
+
+    Preparedness and Disaster Testing
+    Postmortem Culture
+    Automation and Reduced Operational Overhead
+    Structured and Rational Decision Making
+
 </section>
 
 
