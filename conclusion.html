@@ -41,214 +41,21 @@
 
             <section>
                 <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
-                <h1>Monitoreo</h1>
+                <h1>DevOps</h1>
             </section>
-
             <section>
-                <h3>Negocio</h3>
-                <ul>
-                    <li>allala</li>
-                </ul>
+                <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
+                <h1>Dimensiones</h1>
             </section>
-
             <section>
-                <h3>Dentro de la Maquina</h3>
-                <ul>
-                    <li>Aplicación
-                        <ul>
-                            <li>Throughput</li>
-                            <li>MTTR (Mean Time To respond)</li>
-                            <li>Errors (Logs)</li>
-                        </ul>
-                    </li>
-                    <li>OS
-                        <ul>
-                            <li>Resource Usage</li>
-                            <li>Errors</li>
-                        </ul>
-                    </li>
-                </ul>
+                <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
+                <h1>DevOps</h1>
+                Preparedness and Disaster Testing
+                Postmortem Culture
+                Automation and Reduced Operational Overhead
+                Structured and Rational Decision Making
             </section>
 
-            <section>
-                <h3>Fuera de la Maquina</h3>
-                <ul>
-                    <li>Red</li>
-                    <li>Servicios Usados</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>Caja negra</h3>
-                <ul>
-                    <li>Usuarios
-                        <ul>
-                            <li>Origen</li>
-                            <li>Cantidad</li>
-                            <li>"Tipo"</li>
-                            <li>Medio entrada(Navegador, Os, Referer ...)</li>
-                        </ul>
-                    </li>
-                    <li>Aplicación (vista por el usuario)
-                        <ul>
-                            <li>Latencia</li>
-                            <li>Disponibilidad</li>
-                            <li>Appdex</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-<section>
-    From google SRE
-    Golden Signals (USE):
-
-* Latency
-* Traffic
-* Errors
-* Saturation
-
-Worry about Tail (Dont use averages, histogram with exponential buckets)
-
-Resolution of measurements:
-* should go with SLO
-* If too frequent use sampling and agregates
-
-
-Monitoring system should be simple
-* Rules should be simple
-* 
-
-</section>
-<section>
-    Utilization (Percentage, )
-    Saturation (Queue depth)
-    Errors (errors/s)
-    Rate (requests/s)
-    Latency (response time, queue/wait time)
-</section>
-
-<section>
-    <h1>Operacion</h1>
-    SLA, SLO, SLI
-    Monitoreo
-    Alarmas
-    Testing
-    Troubleshooting
-    Postmortems: blameless, learn from failure
-
-
-</section>
-<section>
-    Cascading failures
-    "If at first you don't succeed, back off exponentially."
-
-Dan Sandler, Google Software Engineer
-</section>
-
-<section>
-    Despliegues
-
-    Canary
-    A/B
-    Blue Green
-
-</section>
-
-<section>
-Problem Resolution Strategies(http://www.brendangregg.com/methodology.html):
-    Anti-Methodologies:
-        * Blame someone else:
-            1. Find a system or environment component you are not responsible for
-            2. Hypothesize that the issue is with that component
-            3. Redirect the issue to the responsible team
-            4. When proven wrong, go to 1
-        * Street Light:
-            1. Pick observability tools that are:
-                familiar
-                found on the Internet
-                found at random
-            2. Run tools
-            3. Look for obvious issues
-        * Drunk Man:
-            1 Change things at random until the problem goes away
-        * Random Change:
-            1 Measure a performance baseline
-            2 Pick a random attribute to change (eg, a tunable)
-            3 Change it in one direction
-            4 Measure performance
-            5 Change it in the other direction
-            6 Measure performance
-            7 Were the step 4 or 6 results better than the baseline? If so, keep the change; of not, revert
-            8 Goto step 1
-        * Passive Benchmarking Anti-Method:
-            1 Pick a benchmark tool
-            2 Run it with a variety of options
-            3 Make a slide deck of the results
-            4 Hand the slides to management
-        * Traffic Light
-            1 Open dashboard
-            2 All green? Assume everything is good.
-            3 Something red? Assume that's a problem.
-    Methodologies:
-
-        * USE (Usage Saturation Error)
-            * List Resources
-            * For every resource, check utilization, saturation, and errors.
-        * RED (Rate Errors Duration)
-        * TSA
-            For each thread measure time in each state, investigate from most to least frequent
-        * Ad hoc checklist
-        * Problem statement
-            What makes you think there is a performance problem?
-            Has this system ever performed well?
-            What has changed recently? (Software? Hardware? Load?)
-            Can the performance degradation be expressed in terms of latency or run time?
-            Does the problem affect other people or applications (or is it just you)?
-            What is the environment? What software and hardware is used? Versions? Configuration?
-        * RTFM
-        * Scientific Method
-        * OODA 
-            Observe
-            Orient
-            Decide
-            Act
-        * Work Load characterization
-        * Drill-Down
-        * Elimination (Binary search)
-        * Tools Method 
-            List Tools(or add more)
-            For each tool list useful metrics
-            For each metric list interpretation
-            Run selected tools and interpret
-        * CPU profile with flame graph
-        * Performance Evaluation Steps
-            State the goals of the study and define system boundaries
-            List system services and possible outcomes
-            Select performance metrics
-            List system and workload parameters
-            Select factors and their values
-            Select the workload
-            Design the experiments
-            Analyze and interpret the data
-            Present the results
-            If necessary, start over
-        * Capacity Planning Process
-            Instrument the system
-            Monitor system usage
-            Characterize workload
-            Predict performance under different alternatives
-            Select the lowest cost, highest performance alternative
-</section>
-<section>
-    Resumen:
-
-    Preparedness and Disaster Testing
-    Postmortem Culture
-    Automation and Reduced Operational Overhead
-    Structured and Rational Decision Making
-
-</section>
 
 
 
@@ -269,6 +76,8 @@ Problem Resolution Strategies(http://www.brendangregg.com/methodology.html):
                 Reveal.initialize({
                     defaultTiming: 120,
                     zoomKey: 'shift',
+                    progress:true,
+                    history:true,
                     dependencies: [
                         { src: 'plugin/markdown/marked.js' },
                         { src: 'plugin/markdown/markdown.js' },

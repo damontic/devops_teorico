@@ -44,6 +44,42 @@
                 <h1>Monitoreo</h1>
             </section>
 
+<section>
+Monitoreo
+
+    * Negocio
+        *
+
+
+    * Dentro de la Maquina
+        * App
+            * Throughput
+            * MTTR (Mean Time To respond)
+            * Errors (Logs)
+        * OS
+            * Resource Usage
+            * Errors
+    * fuera de la Maquina
+        * Red
+        * Servicios usados
+    * Caja Negra
+        * Usuarios
+            * Origen
+            * Cantidad
+            * "Tipo"
+            * Medio entrada(Navegador, Os, Referer ...)
+        * App (As user would see it)
+            * Latencia
+            * Disponibilidad
+            * Appdex
+            ...
+
+</section>
+  <section>
+                <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
+                <h1>Monitoreo</h1>
+            </section>
+
             <section>
                 <h3>Negocio</h3>
                 <ul>
@@ -269,6 +305,8 @@ Problem Resolution Strategies(http://www.brendangregg.com/methodology.html):
                 Reveal.initialize({
                     defaultTiming: 120,
                     zoomKey: 'shift',
+                    progress:true,
+                    history:true,
                     dependencies: [
                         { src: 'plugin/markdown/marked.js' },
                         { src: 'plugin/markdown/markdown.js' },
