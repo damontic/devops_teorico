@@ -38,6 +38,7 @@
                 &ldquo;The automated manifestation of your process for getting software from version control into the hands of your users.&rdquo; <b> -- Jez Humble</b>
             </blockquote>
         </section>
+
         <!--Contenido 1-->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
@@ -76,9 +77,28 @@
                 <p><img src="images/code/cd_vs_cd.png" class="no-border stretch"></p>
             </section>
 
-            <!--Ambientes-->    
+            <!--Stages-->
+            <section>
+                <h2>Stages</h2>
+                <ul>
+                    <li>Procesos comunes (infraestructura, configuración)</li>
+                    <li>Monitoreo</li>
+                </ul>
+            </section>
+
+            <!--Ambientes-->
             <section>
                 <h2>Ambientes</h2>
+                <ul>
+                    <li>Fijos y efímeros ($$$$)</li>
+                    <li>Crear ambientes de forma rápida, en cualquier momento y en cualquier etapa</li>
+                    <li>Propósito</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Ambientes de auditoría por ejemplo</li>
+                    </ul>
+                </aside>
             </section>
 
             <!--Pipeline de Software-->
@@ -97,15 +117,21 @@
             </section>
 
             <section>
-                <!--<h3>Cómo puede ser un Pipeline</h3>-->
-                <!--<p><img src="images/code/deployment_pipeline.png" class="no-border stretch" width="80%"></p>-->
                 <p><img src="images/code/deployment_pipeline.png" class="no-border stretch"></p>
                 <aside class="notes">
                     <ul>
-                        <li>Todo verionado</li>
+                        <li>Características que deben cumplirse en los stages del pipeline</li>
                     </ul>
                 </aside>
             </section>
+
+            <section>
+                <h2>En General</h2>
+                <p><ul>
+                <li>Lalala 1</li>
+            </ul></p>
+            </section>
+
 
             <!--Etapas Principales-->
             <section>
@@ -192,7 +218,7 @@
 
         </section>
 
-        <!--Desarrollo 1-->
+        <!--Desarrollo -->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
             <section>
@@ -200,9 +226,56 @@
                 <h1>Desarrollo</h1>
             </section>
 
+            <section>
+                <h2>Desarrollo</h2>
+                <p>Vamos a poner algo que diga que es necesario asegurdad calidad desde el comienzo</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Procesos del dev en su máquina</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Desarrollo</h2>
+                <p>PProcedimiento Individual de cada Desarrollador
+                    - "Pero funciona en mi máquina"
+                    - Pruebas unitarias: elaboración y ejecución
+                    - Análisis código estático
+
+                    Pull, Push Contínuos
+                    -
+
+                    Seguridad
+                    - No versionar datos sensibles
+                    - Usar herramientas
+
+                    Pull Request
+                    - Revisión de código entre pares
+                    -
+
+                    Branches
+                    - Branches que duran poco (idealmente un solo branch)
+
+                    Pensar en cómo monitorear a futuro
+                    - Health check enpoints
+                    - Logs útiles y centralizados?
+                </p>
+            </section>
+
+            <section>
+                <h2>Desarrollo</h2>
+                <h4>Procedimiento Individual de cada Desarrollador</h4>
+                <aside class="notes">
+                    <ul>
+                        <li>Procesos del dev en su máquina</li>
+                    </ul>
+                </aside>
+            </section>
+
         </section>
 
-        <!--Integración 1-->
+        <!--Integración -->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
             <section>
@@ -210,9 +283,45 @@
                 <h1>Integración</h1>
             </section>
 
+            <section>
+                <h2>Integración</h2>
+                <p>Integración
+
+                    Administración de Código Fuente
+                    - SCM (git, svn, mercurial, cvs)
+                    - Poner imagen git y cositos ()
+
+                    Pruebas
+                    - Unitarias (ejecución)
+                    - Integración (elaboración y ejecución)
+
+                    Análisis de Código Estático
+                    - Reportes y retroalimentación
+                    - coverage
+                    - (imagenes 2 sonar qube)*
+
+                    Análisis de Seguridad de Dependencias
+                    - (Poner pantallazo git)
+                    -
+
+                    Construcción de Binarios
+                    - Generar artefactos una sola vez
+                    - Versionamiento de binarios
+
+                    Preparación de Datos
+                    - Migraciones de esquemas y datos
+
+                    Creación y Configuración de Infraestructura
+                    - Pruebas "on the go"
+
+                    Despliegue
+                    - Accesos, binarios, versiones
+                </p>
+            </section>
+
         </section>
 
-        <!--QA 1-->
+        <!--QA -->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
             <section>
@@ -220,9 +329,25 @@
                 <h1>QA</h1>
             </section>
 
+            <section>
+                <h2>QA</h2>
+                <p>QA
+                    Minimo producto viable
+                    Funcionales y No funcionales
+
+                    Pruebas de Aceptación
+                    - Vamo a ver si mi producto hace lo que tiene que hacer
+
+                    Pruebas de Carga y Estrés
+                    - Repetidas constantemente
+
+                    Pruebas seguridad
+                </p>
+            </section>
+
         </section>
 
-        <!--Producción 1-->
+        <!--Producción -->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
             <section>
