@@ -31,8 +31,9 @@
             <img class="no-border" width="5%" src="images/rombo.svg"/>
             <img class="no-border" width="13%" src="images/s4n.svg"/>
             <h1 class="white-font">Monitoreo</h1>
-            <blockquote class="white-font" cite="https://landing.google.com/sre/book/chapters/introduction.html">
-                &ldquo;Hope is not a strategy.&rdquo;
+            <blockquote class="white-font" width="20px" cite="https://landing.google.com/sre/book/chapters/introduction.html">
+                &ldquo;Es un error teorizar antes de poseer datos, uno comienza a deformar los hechos para hacerlos encajar en las teorías, en vez de ...&rdquo;
+                --Sherlock Holmes
             </blockquote>
         </section>
 
@@ -41,54 +42,32 @@
 
             <section>
                 <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
-                <h1>Monitoreo</h1>
+                <h1>Que monitorear</h1>
             </section>
 
-<section>
-Monitoreo
 
-    * Negocio
-        *
-
-
-    * Dentro de la Maquina
-        * App
-            * Throughput
-            * MTTR (Mean Time To respond)
-            * Errors (Logs)
-        * OS
-            * Resource Usage
-            * Errors
-    * fuera de la Maquina
-        * Red
-        * Servicios usados
-    * Caja Negra
-        * Usuarios
-            * Origen
-            * Cantidad
-            * "Tipo"
-            * Medio entrada(Navegador, Os, Referer ...)
-        * App (As user would see it)
-            * Latencia
-            * Disponibilidad
-            * Appdex
-            ...
-
-</section>
-  <section>
+            <section>
                 <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
-                <h1>Monitoreo</h1>
+                <h2>Monitoreo de</h2>
+                <ul>
+                    <li>Negocio</li>
+                    <li>Maquina</li>
+                    <li>Ambiente</li>
+                    <li>Caja Negra</li>
+                </ul>
             </section>
+
 
             <section>
                 <h3>Negocio</h3>
                 <ul>
-                    <li>allala</li>
+                    <li>Trazabilidad</li>
+                    <li>Por donde a pasado</li>
+                    <li>Por donde anda</li>
                 </ul>
             </section>
-
             <section>
-                <h3>Dentro de la Maquina</h3>
+                <h3>Máquina</h3>
                 <ul>
                     <li>Aplicación
                         <ul>
@@ -105,12 +84,12 @@ Monitoreo
                     </li>
                 </ul>
             </section>
-
             <section>
-                <h3>Fuera de la Maquina</h3>
+                <h3>Ambiente</h3>
                 <ul>
                     <li>Red</li>
                     <li>Servicios Usados</li>
+                    <li>Interacciones entre Servicios</li>
                 </ul>
             </section>
 
@@ -169,8 +148,19 @@ Monitoring system should be simple
     SLA, SLO, SLI
     Monitoreo
     Alarmas
-    Testing
-    Troubleshooting
+        Every alarm should be actionable, 
+        First static (Nagios, Zabbix, DataDog)
+            Alarms when definetely wrong
+            Alarms with lower bounds.
+            Dont use averages, use median with short measuring window or percentiles
+        Anomaly Detection
+            Affected by seasonality
+        Newer: 
+            Cloud: DataDog, SignalFx 
+            On premise:  Prometheus, InfluxDb
+
+
+    Testing    
     Postmortems: blameless, learn from failure
 
 
