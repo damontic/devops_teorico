@@ -27,6 +27,19 @@
 
 
 
+
+Logs:
+    ELK
+    Cloudwatch metrics
+    mtail (extract monitoring into time series)
+Metrics:
+    Instrumentation 
+        In code: (Java instrumentation, https://github.com/Netflix/spectator, servo netflix)
+        Binary: machine, jmx(java agent)
+    Scrapping (Prometheus, Riemman?)
+    Grouping
+
+
 Golden Signals (USE):
 
 * Latency
