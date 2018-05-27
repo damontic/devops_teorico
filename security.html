@@ -43,6 +43,52 @@
                 <img style="float: left" class="no-border" width="10%" src="images/rombo.svg"/>
                 <h1>Conceptos</h1>
             </section>
+
+      		<section>
+                <h2>Prácticas Tradicionales</h2>
+                <ul>
+                	<li class="fragment">Equipo aparte revisa justo antes de salir a producción:</li>
+                	<ul>
+                		<li class="fragment">Arquitectura</li>
+                		<li class="fragment">Código</li>
+                	</ul>
+                	<li class="fragment">Resultado:</li>
+                	<ul>
+                		<li class="fragment">Se aplaza la salida a Producción</li>
+                		<li class="fragment">Se generan recomendaciones de infraestructura</li>
+                		<li class="fragment">Se agregan bugs a la Aplicación</li>
+                		<li class="fragment">Se agregan nuevas Historias de Usuario</li>
+                	</ul>
+                </ul>
+            </section>
+
+
+      		<section>
+                <h2>Herramientas Tradicionales: TLS/SSL - HTTPS</h2>
+                <img class="stretch" src="images/security/https.jpg" />
+            </section>
+
+            <section>
+                <h2>Herramientas Tradicionales: SSH</h2>
+                <img class="stretch" src="images/security/ssh.jpg" />
+            </section>
+
+            <section>
+                <h2>Herramientas Tradicionales: PGP</h2>
+                <img class="stretch" src="images/security/pgp.svg" />
+            </section>
+
+            <section>
+                <h2>Herramientas Tradicionales: VPNs</h2>
+                <li class="fragment">PPTP VPN</li>
+                <li class="fragment">Site to Site VPN</li>
+                <li class="fragment">L2TP VPN</li>
+                <li class="fragment">IPsec VPN</li>
+                <li class="fragment">SSL VPN</li>
+                <li class="fragment">MPLS VPN</li>
+                <li class="fragment">Hybrid VPN</li>
+            </section>
+
         </section>
 
         <!--Integrando securidad-->
@@ -63,6 +109,63 @@
                 		<li class="fragment">Procedimientos</li>
                 	</ul>
                 </ul>
+            </section>
+
+            <section>
+                <h2>Arquitectura del Software</h2>
+                <ul>
+                	<li class="fragment">Definir Roles de Negocio y asegurar su creación controlada</li>
+                	<li class="fragment">Identificar sistemas externos que requieren proceso de autenticación</li>
+                	<ul>
+                		<li class="fragment">Definir procesos de autenticación</li>
+                		<li class="fragment">Definir procesos ubicación de llaves privadas</li>
+                		<li class="fragment">Optar por procesos de creación de llaves temporales</li>
+                	</ul>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Seguridad en Etapa de Desarrollo</h2>
+                <ul>
+                	<li class="fragment">Puma Scan</li>
+                	<li class="fragment">Find Security Bugs</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><a href="https://www.pumascan.com">Puma Scan</a></h2>
+                <img class="stretch" src="images/security/puma_scan1.png" />
+                <img class="stretch" src="images/security/puma_scan2.png" />
+            </section>
+
+            <section>
+                <h2><a href="https://find-sec-bugs.github.io/">Find Security Bugs</a></h2>
+                <img class="stretch" src="images/security/find_security_bugs.png" />
+            </section>
+
+            <section>
+                <h2>Test Driven Security</h2>
+                <img class="stretch" src="images/security/tds.png" />
+            </section>
+
+            <section>
+                <h2>Gauntlt</h2>
+                <img class="stretch" src="images/security/tds2.png" />
+            </section>
+
+			<section>
+                <h2><a href="https://www.owasp.org/index.php/Main_Page">Open Web Application Security Project (OWASP)</a></h2>
+                <ul>
+                	<li class="fragment">Noticias</li>
+                	<li class="fragment">Libros</li>
+                	<li class="fragment">Videos</li>
+                	<li class="fragment">100s+ Aplicaciones de Seguridad</li>
+                </ul>
+            </section>
+
+      		<section>
+                <h2>ZAP: Zed Attack Proxy(OWASP)</h2>
+                <img class="stretch" src="images/security/zap.png" />
             </section>
 
             <section>
@@ -92,17 +195,12 @@
                 </ul>
             </section>
 
+			<section>
+            	<img class="stretch" src="images/security/devsecops.gif" />
+            </section>
+
             <section>
-                <h2>Arquitectura del Software</h2>
-                <ul>
-                	<li class="fragment">Definir Roles de Negocio y asegurar su creación controlada</li>
-                	<li class="fragment">Identificar sistemas externos que requieren proceso de autenticación</li>
-                	<ul>
-                		<li class="fragment">Definir procesos de autenticación</li>
-                		<li class="fragment">Definir procesos ubicación de llaves privadas</li>
-                		<li class="fragment">Optar por procesos de creación de llaves temporales</li>
-                	</ul>
-                </ul>
+            	<img class="stretch" src="images/security/devsecops.png" />
             </section>
 
             <section>
@@ -131,6 +229,8 @@
                 Reveal.initialize({
                     defaultTiming: 120,
                     zoomKey: 'shift',
+                    progress:true,
+                    history:true,
                     dependencies: [
                         { src: 'plugin/markdown/marked.js' },
                         { src: 'plugin/markdown/markdown.js' },
