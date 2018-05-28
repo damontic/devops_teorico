@@ -26,38 +26,123 @@
 <div id="bottom"></div>
 <div class="reveal">
     <div class="slides">
+
         <section data-background="url('images/logo_esquina_intro_end.svg'), linear-gradient(to right, #443548, #b71930, #e94635)"
                  data-background-position="right bottom" data-background-repeat="no-repeat">
             <img class="no-border" width="5%" src="images/rombo.svg"/>
             <img class="no-border" width="13%" src="images/s4n.svg"/>
-            <h1 class="white-font">Despliegue</h1>
+            <h1 class="white-font">Salidas a Producción</h1>
             <blockquote class="white-font" cite="https://landing.google.com/sre/book/chapters/introduction.html">
                 &ldquo;Hope is not a strategy.&rdquo;
             </blockquote>
         </section>
 
-        <!--Devops-->
+        <!--Versionamiento-->
         <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
-       
-        <section>
-            Despliegues
+            <section>
+                <h2>Versionamiento</h2>
+            </section>
 
-            Canary
-            A/B
-            Blue Green
+            <section>
+                <h3>Versionamiento</h3>
+                <img class="stretch" src="images/release/versioning.svg" />
+            </section>
+
+            <section>
+                <h3>Cíclo de Lanzamiento</h3>
+                <img class="stretch" src="images/release/release_life.svg" />
+                <aside class="notes">
+                    <ul>
+                        <li>Pre-Alpha: </li>
+                        <li>Alpha: </li>
+                        <li>Beta: </li>
+                        <li>Release Candidate: </li>
+                        <li>RTM: </li>
+                        <li>GA: </li>
+                        <li>Production Release (Gold): </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h3>Versionamiento Manual</h3>
+                <img class="stretch" src="images/release/versionamiento1.svg" />
+            </section>
+
+            <section>
+                <h3>Versionamiento por SNAPSHOTS</h3>
+                <img class="stretch" src="images/release/versionamiento2.svg" />
+            </section>
+
+            <section>
+                <h3>Versionamiento Ágil: Git</h3>
+                <img class="stretch" src="images/release/versionamiento3.svg" />
+            </section>
 
         </section>
 
+        <!--Despliegues DevOps-->
+        <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
 
+            <section>
+                <h2>Despliegues DevOps</h2>
+            </section>
 
+            <section>
+                <h3>Sistema de Administración de Cambios</h3>
+                <img class="stretch" src="images/release/cambios.png" />
+            </section>
 
+            <section>
+                <h3>Visualización de Versión por Ambiente</h3>
+                <img class="stretch" src="images/release/release_dashboard.png" />
+            </section>
 
-                  <!--Que gracias-->
+            <section>
+                <h3>Apoderamiento</h3>
+                <ul>
+                    <li class="fragment">Permitir al equipo de desarrollo interactuar con el ambiente de producción y los despliegues</li>
+                    <ul>
+                        <li class="fragment">Acceso a logs</li>
+                        <li class="fragment">Acceso a Monitoreo</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Eliminar Interacción Humana</h3>
+                <ul>
+                    <li class="fragment">Despliegue</li>
+                    <li class="fragment">Rollback</li>
+                </ul>
+            </section>
+
+        </section>
+
+        <!--Técnicas de Despliegue-->
+        <section data-background="url('images/logo_esquina.svg')" data-background-position="right bottom" data-background-repeat="no-repeat">
+
+            <section>
+                <h2>Tipos de Despliegue</h2>
+            </section>
+
+            <section>
+                <h3>Canary</h3>
+            </section>
+
+            <section>
+                <h3>Blue Green</h3>
+            </section>
+
+        </section>
+
+        <!--Que gracias-->
         <section data-background="url('images/logo_esquina_intro_end.svg'), linear-gradient(to right, #443548, #b71930, #e94635)"
                  data-background-position="right bottom" data-background-repeat="no-repeat">
             <h1 class="white-font">Muchas Gracias</h1>
         </section>
+
     </div>
 </div>
 <script src="lib/js/head.min.js"></script>
